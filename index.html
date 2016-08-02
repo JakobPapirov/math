@@ -26,8 +26,8 @@
 		<link rel="stylesheet" href="css/main.css"> <!-- Find out if i should add a media tag for a separate css for mobile -->
 	<title>Mathematics roadmap</title>
 </head>
-<body>
-	<div class="container" id="top"> <!-- Go to top of page -->
+<body id="top">
+	<div class="container"> <!-- Go to top of page -->
 		<nav class="navbar navbar-fixed-top navbar-inverse"> <!-- Main navigation; navbar, static -->
 			<div class="container-fluid  navbar-right">
 				<!-- Brand and toggle get grouped for better mobile display -->
@@ -42,8 +42,8 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       				<ul class="nav navbar-nav">
-      					<li><a href="single-variable-calculus/index.html">Single variable calculus: <br> Lecture notes</a></li>
-      					<li><a href="linear-algebra/index.html">Linear algebra: <br> Lecture notes</a></li>
+      					<li><a href="single-variable-calculus/index.html">Single variable calculus: <br>Study notes</a></li>
+      					<li><a href="linear-algebra/index.html">Linear algebra: <br>Study notes</a></li>
       					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Single variable calculus<span class="caret"></span></a>
           					<ul class="dropdown-menu">
 								<li><a href="#coursera">Coursera</a></li>
@@ -88,36 +88,63 @@
 						<ul>
 							<li>Calculus 1</li>
 								<div class="progress">
-  									<div class="progress-bar progress-bar-success" role="progressbar"style="min-width: 2em; width: 31.25%">
-  										31.25%
+  									<div class="progress-bar progress-bar-success" role="progressbar"style="min-width: 2em; width: 31%">
+  										31%
+  										<!--19%-->
+  										<!--63%-->
+  										<!--100%-->
   									</div>
 								</div>
+								<ul>
+									<li>Limits and continuity</li>
+										<div class="progress">
+											<div class="progress-bar progress-bar-success" role="progressbar" style="min-width: 2em; width: 100%">
+												100% <!--3/3-->
+											</div>
+										</div>
+									<li>Differentiation</li>
+										<div class="progress">
+											<div class="progress-bar progress-bar-success" role="progressbar" style="min-width: 2em; width: 29%">
+												29%<!--2/7-->
+											</div>
+										</div>
+									<li>Antidifferentiation</li>
+										<div class="progress">
+											<div class="progress-bar progress-bar-success" role="progressbar" style="min-width: 2em; width: 0%">
+												0%<!--0/6-->
+											</div>
+										</div>
+								</ul>
 						</ul>
 					<li>Khan Academy</li>
 						<ul>
 							<li>Differential calculus</li>
 								<div class="progress">
-  									<div class="progress-bar progress-bar-success" role="progressbar" style="min-width: 2em; width: 0%">
-  										0%
+  									<div class="progress-bar progress-bar-success" role="progressbar" style="min-width: 2em; width: 10%">
+  										13%
+  										<!--23%--><!--61%--><!--100%-->
   									</div>
 								</div>
 								<ul>
 									<li>Limits</li>
 									<div class="progress">
-  										<div class="progress-bar progress-bar-success" role="progressbar" style="min-width: 2em; width: 14.29%">
-  										14.29%
+  										<div class="progress-bar progress-bar-success" role="progressbar" style="min-width: 2em; width: 71%">
+  										71%
+  										<!--86%--><!--100%--> 
   										</div>
 									</div>
 									<li>Taking derivatives</li>
 									<div class="progress">
   										<div class="progress-bar progress-bar-success" role="progressbar" style="min-width: 2em; width: 0%">
   										0%
+										<!--8%--><!--17%--><!--25%--><!--33%--><!--42%--><!--50%--><!--58%--><!--67%--><!--75%--><!--83%--><!--92%--><!--100%-->
   										</div>
 									</div>
 									<li>Derivative applications</li>
 									<div class="progress">
   										<div class="progress-bar progress-bar-success" role="progressbar" style="min-width: 2em; width: 0%">
   										0%
+  										
   										</div>
 									</div>
 								</ul>
@@ -200,7 +227,7 @@
 						<ul> <!-- Coursera single variable calculus courses -->
 							<h4><li><a href="https://www.coursera.org/learn/calculus1" target="_blank" title="Playlist">Calculus 1</a> | 17 hrs 20 mins</li></h4>
 								<ol> <!-- Calculus 1 --> 
-									<li id="CourCalc1Week1"><a href="https://www.coursera.org/learn/calculus1/home/week/1" target="_blank">Welcome to Calculus One</a> | 23 mins
+									<li id="CourCalc1Week1"><a href="https://www.coursera.org/learn/calculus1/home/week/1" target="_blank" title="Week 1 | 4 tasks">Welcome to Calculus One</a> | 23 mins
 										<a href="#coursera" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 										
 										<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
@@ -346,56 +373,51 @@
 							</ul>
 						</li>
 					</ul> <!-- INTRA Navigation KA differential calculus ends -->
-					<ul>
-						<li id="KADiffCalcLimits">
-							<a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/limits-topic" target="_blank">Limits</a>
+						<h5 id="KADiffCalcLimits"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/limits-topic" target="_blank" title="32 vidoes | new tab">Limits</a> | 2:58:32 hours</h5>
 							<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 							<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 							<p>Limit introduction, squeeze theorem, and epsilon-delta definition of limits</p>
-						</li>
 							<ol>
-								<li><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/limits-topic/limits-tutorial" target="_blank">Limits</a> | 17:34 mins
+								<li><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/limits-topic/limits-tutorial" target="_blank" title="3 vidoes | new tab">Limits</a> | 17:34 mins
 									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
 									<p>Much of calculus deals with the idea of infinity. You will commonly hear people speaking about something "infinitely small", for example. Limits are the tool underlying all calculus which let us talk sensibly about infinity. In particular, they give us the language to talk about being "infinitely close" to some number by considering what happens as you approach that number. </p>
 									</li>
-								<li><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/limits-topic/calculus-estimating-limits-graph" target="_blank">Estimating limits from graphs</a>
+								<li><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/limits-topic/calculus-estimating-limits-graph" target="_blank" title="4 vidoes | new tab">Estimating limits from graphs</a> | 23:30 mins
 									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
-									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
+									<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
 									<p>In this tutorial, we will build our ability to visualize limits by estimating them based on graphs of functions. We will look at both one-sided and two-sided limits.</p>
 									</li>
-								<li><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/limits-topic/algebraic-limits" target="_blank">Finding limits algebraically</a>
+								<li><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/limits-topic/algebraic-limits" target="_blank" title="3 vidoes | new tab">Finding limits algebraically</a> | 14:46 mins
 									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
-									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
+									<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
 									<p>We often attempt to find the limit at a point where the function itself is not defined. In this tutorial, we will use algebra to "simplify" functions into ones where it is defined. Given that the original function and the simplified one may be identical except for the limit point in question, this is a useful way of finding limits. </p>
 									</li>
-								<li><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/limits-topic/continuity-limits" target="_blank">Continuity using limits</a>
+								<li><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/limits-topic/continuity-limits" target="_blank" title="4 vidoes | new tab">Continuity using limits</a> | 25:32 mins
 									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
-									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
+									<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
 									<p>A function isn't continuous when there is a "break" in its graph. This tutorial uses limits to define this idea more formally and gives practice thinking about continuity (and discontinuity) in terms of limits.</p>
 									</li>
-								<li><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/limits-topic/limits-infinity" target="_blank">Limits and infinity</a>
+								<li><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/limits-topic/limits-infinity" target="_blank" title="7 vidoes | new tab">Limits and infinity</a> | 35:42 mins
 									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
-									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
+									<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
 									<p>You have a basic understanding of what a limit is. Now, in this tutorial, we can explore situation where we take the limit as x approaches negative or positive infinity (and situations where the limit itself could be unbounded).</p>
 									</li>
-								<li><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/limits-topic/squeeze-theorem" target="_blank">Squeeze theorem</a>
+								<li><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/limits-topic/squeeze-theorem" target="_blank" title="4 vidoes | new tab">Squeeze theorem</a> | 36:47 mins
 									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 									<p>If a function is always smaller than one function and always greater than another (i.e. it is always between them), then if the upper and lower function converge to a limit at a point, then so does the one in between. Not only is this useful for proving certain tricky limits (we use it to prove lim (x → 0) of (sin x)/x, but it is a useful metaphor to use in life (seriously). :) This tutorial is useful but optional. It is covered in most calculus courses, but it is not necessary to progress on to the "Introduction to derivatives" tutorial.</p>
 									</li>
-								<li><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/limits-topic/epsilon-delta" target="_blank">Epsilon delta definition of limits</a>
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+								<li><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/limits-topic/epsilon-delta" target="_blank" title="4 vidoes | new tab">Epsilon delta definition of limits</a>
+									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a> | 24:41 mins
 									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 									<p>This tutorial introduces a "formal" definition of limits. So put on your ball gown and/or tuxedo to party with Mr. Epsilon Delta (no, this is not referring to a fraternity). This tends to be covered early in a traditional calculus class (right after basic limits), but we have mixed feelings about that. It is cool and rigorous, but also very "mathy" (as most rigorous things are). Don't fret if you have trouble with it the first time. If you have a basic conceptual understanding of what limits are (from the "Limits" tutorial), you're ready to start thinking about taking derivatives.</p>
 								</li>
 							</ol>
-						<li id="KADiffCalcDer">
-							<a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/taking-derivatives" target="_blank">Taking derivatives</a>
+						<h5 id="KADiffCalcDer"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/taking-derivatives" target="_blank">Taking derivatives</a></h5>
 							<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 							<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 							<p>Calculating derivatives. Power rule. Product and quotient rules. Chain Rule. Implicit differentiation. Derivatives of common functions.</p>
-						</li>
 							<ol>
 								<li><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/taking-derivatives/intro-differential-calc" target="_blank">Introduction to differential calculus</a>
 									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
@@ -458,12 +480,10 @@
 									<p>We told you about the derivatives of many functions, but you might want proof that what we told you is actually true. That's what this tutorial tries to do!</p>	
 									</li>
 							</ol>
-						<li id="KADiffCalcDerApp">
-							<a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/derivative-applications" target="_blank">Derivative applications</a>
+						<h5 id="KADiffCalcDerApp"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/derivative-applications" target="_blank">Derivative applications</a></h5>
 							<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 							<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 							<p>The reason we study calculus, and the reason it was invented, is for its many uses in real-world problems. In particular, derivatives let us optimize functions and study their rates of change. Here we cover optimization, rates of change, L'Hopital's rule, the mean value theorem, and more!</p>
-							</li>
 							<ol>
 								<li><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/derivative-applications/normal-tangent-line-eq" target="_blank">Equations of normal and tangent lines</a>
 									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
@@ -526,10 +546,8 @@
 									<p>Here you have the chance to practice thinking about tangent lines when curves are defined in polar coordinates.</p>
 									</li>
 							</ol>
-					</ul>
 					<h3 id="youtube"><a href="https://www.youtube.com" target="_blank">Youtube</a><a href="#top"><button type="button" class="btn btn-info top">Top of page</button></a></h3>
-						<ul>
-							<li><h4><a href="https://www.youtube.com/user/UCLACourses" target="_blank">UCLA</a></h4></li>
+							<h4><a href="https://www.youtube.com/user/UCLACourses" target="_blank">UCLA</a></h4>
 								<ol>
 									<li><a href="" target="_blank"></a></li>
 									<li><a href="" target="_blank"></a></li>
@@ -542,9 +560,7 @@
 									<li><a href="" target="_blank"></a></li>
 									<li><a href="" target="_blank"></a></li>
 								</ol>
-						</ul>
-						<ul>
-							<li><h4><a href="https://www.youtube.com/channel/UC_zdcJ90AsNsG71ovz9NCUw/videos" target="_blank">slcmath@pc</a></h4></li>
+							<h4><a href="https://www.youtube.com/channel/UC_zdcJ90AsNsG71ovz9NCUw/videos" target="_blank">slcmath@pc</a></h4>
 								<ol>
 									<li><a href="" target="_blank"></a></li>
 									<li><a href="" target="_blank"></a></li>
@@ -557,13 +573,10 @@
 									<li><a href="" target="_blank"></a></li>
 									<li><a href="" target="_blank"></a></li>
 								</ol>
-						</ul>
 					<h3 id="mit"><a href="http://ocw.mit.edu/courses/mathematics" target="_blank">MIT | Open courseware</a><a href="#top"><button type="button" class="btn btn-info top">Top of page</button></a></h3>
-						<ul>
-							<li><h4><a href="http://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/" target="_blank">Single variable calculus</a></h4></li>
-						</ul>
-			</div>
-		</div> <!-- Single variable calculus ends -->
+							<h4><a href="http://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/" target="_blank">Single variable calculus</a></h4>
+			</div> <!-- Single variable calculus col ends -->
+		</div> <!-- Single variable calculus row ends -->
 		<div class="row"> <!-- Section divider -->
 			<div class="col-md-12">
 				<hr> <!-- Horizontal rule -->
@@ -591,7 +604,13 @@
 				<hr> <!-- Horizontal rule -->
 			</div>
 		</div><!-- Section divider end -->
-		<p>Resources used: Bootstrap (incl. glyphicons)</p>
+		<div class="row"> <!-- Resources used -->
+			<div class="col-md-12">
+				<p>Resources used: 
+					<a href="https://getbootstrap.com" target="_blank" title="Go to bootstrap website | new tab">Bootstrap</a>  (incl.  
+					<a href="https://getbootstrap.com/components/#glyphicons" target="_blank" title="Go to Bootstrap: glyphicons | new tab">glyphicons</a>)</p>
+			</div>
+		</div> <!-- Resources used ends -->
 	</div> <!-- container ends -->
 </body>
 </html>

@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<!-- For Edge -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- -->
+		<meta name="description" content="Your description goes here">
+		<meta name="keywords" content="your,keywords,goes,here">
+		<meta name="author" content="Your Name">
+		<!-- Google fonts -->
+		
+		<!-- JQuery -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<!-- JavaScript -->
+			<!-- Remote -->
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+				<!-- MathJax -->
+		<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+			<!-- Local -->
+			
+		<!-- CSS -->
+			<!-- Loads bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> <!-- Has to be loaded first, else overwritten -->
+			<!-- Main CSS -->
+		<link rel="stylesheet" href="../css/main.css"> <!-- Find out if i should add a media tag for a separate css for mobile -->
+	<title>Single variable calculus</title>
+</head>
+<body  id="top">
+	<div class="container">
+		<nav class="navbar navbar-fixed-top navbar-inverse"> <!-- Main navigation; navbar, static -->
+			<div class="container-fluid  navbar-right">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+      				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        				<span class="sr-only">Toggle navigation</span>
+        				<span class="icon-bar"></span> <!-- Dash one -->
+        				<span class="icon-bar"></span> <!-- Dash two -->
+        				<span class="icon-bar"></span> <!-- Dash three -->
+      				</button>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      				<ul class="nav navbar-nav">
+      					<li><a href="../index.html">Math | Homepage</a></li>
+      					<li><a href="../linear-algebra/index.html">Linear algebra: <br>Study notes</a></li>
+      					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Study notes<span class="caret"></span></a>
+          					<ul class="dropdown-menu">
+          						<li><a href="#notes-limits">Limits</a></li>
+          						<li><a href="#notes-differentiation">Differentiation</a></li>
+          						<li><a href="#notes-integration">Integration</a></li>
+          					</ul>
+          				</li>
+          				<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mathematics<span class="caret"></span></a>
+          					<ul class="dropdown-menu">
+          						<li><a href="#math-limits">Limits</a></li>
+          						<li><a href="#math-differentiation">Differentiation</a></li>
+          						<li><a href="#math-integration">Integration</a></li>
+          					</ul>
+          				</li>				
+      					<li><a href="#top">Go to top</a></li> <!-- Go to top of page -->
+      				</ul>
+      			</div>
+      		</div>
+      	</nav>	
+		<div class="row"><!-- Page heading -->
+			<div class="col-md-12"> <!-- Takes upp 100% row -->
+				<div class="page-title">
+					<h1>Single variable calculus</h1>
+						<h3>Study notes</h3>
+				</div>
+			</div>
+		</div> <!-- Page heading ends -->
+		<div class="row"> <!-- Section divider -->
+			<div class="col-md-12">
+				<hr> <!-- Horizontal rule -->
+			</div>
+		</div>
+		<div class="row"> <!-- Study notes -->
+			<div class="col-md-6">
+				<h2 class="header-section" id="#">Study notes</h2>
+					<h3 class="intraheader-section" id="notes-limits">Limits &amp; continuity</h3>
+						<h4>Limits</h4>
+						<p>A specific value "in" function can be approached from two sides, the negative side (from the left) and from the positive side (from the right). If the limits from the left side and the right side are not equal, then the function has no limit and therefore the function is not continuous and therefore is not differentiable.</p>
+						<p>The sum of the limits is the limit of the sum.<span> The sum property</span> L+M</p>
+						<p>The difference of the limits is the limit of the difference. <span>The difference property</span>L-M</p>
+						<p>The product of the limits is the limit of the products. <span>The product property</span> L*M</p>
+						<p>The quotient of the limits is the limit of the quotient. <span>The quotient property</span> L/M</p>
+						<p>A constant times a limit is the constant multiple of the limit. <span>The multiple property</span> k*L</p>
+						<p>The limit of an function raised to the power of r/s is the limit raised to the power r/s, where s is non zero.<span>The exponent property</span> L^(r/s)</p>
+						<h4>Continuity</h4>
+						<p>For a function, f(x), to be continuous a limit, L, has to exist and that limit has to equal f(c) when x = c. A function can be continuous within an interval or at the endpoints/boundarypoints. For the first case the limits has to hold from both sides, but at the endpoints only the limit coming from within the function domain (usually called the intervall (a, b)).</p>
+					<h3 class="intraheader-section" id="notes-differentiation">Differentiation</h3>
+						<p>Differentiation is about the study of change.</p>
+						<p>In order to study that change a function has to be continous.</p>
+						<h4>Power rule</h4>
+							<p>The very basic rule of how to differentiate. It comes from the definition of the derivative and simplifies into this rule.</p>
+						<h4>Product rule</h4>
+							<p>How to differentiate one function times another?</p>
+						<h4>Quotient rule</h4>
+							<p>How to differentiate one function divided by another. This rule assumes that the second function is 
+								<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+									<mrow>
+										<mo>&ne;</mo>
+										<mn>0</mn>
+									</mrow>
+								</math>
+								.</p>
+						<h4>Chain rule</h4>
+							<p>Now things become tricky; what if one function is the input to another function, in other words one function is nested inside another function? The chain rule comes to the rescue!</p>
+						<h4>The derivative of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+												<mrow>
+													<mi>ln</mi><mo>&ApplyFunction;</mo>
+													<mi>x</mi>
+												</mrow>
+												</math>
+							</h4>
+							<p>test</p>
+						<h4>Logarithmic differentiation</h4>
+							<p>At this point we can differentiate a lot of different functions and their combinations, but things can get quite time-consuming, messy and prone to calculation misstakes. To simplify matters, we can recall the way logarithms work and apply them as an intermediate step before doing the differentiation in order to simplify our calculations!</p>
+					<h3 class="intraheader-section" idid="notes-integration">Integration</h3>
+						<p>Change backwards.</p>
+			</div>
+			<div class="col-md-6"> <!-- Mathmatical formulas -->
+				<h2 class="header-section" id="#">Mathematical formulas and stuff</h2>
+					<h3 class="intraheader-section" id="math-limits">Limits</h3>
+						<h4 class="header-section">Finding limits</h4>
+							<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"> <!-- Finding limits -->
+<mrow>
+  <munder>
+        <mrow>
+          <mi>lim</mi><mo>&ApplyFunction;</mo>
+        </mrow>
+      <mrow>
+        <mi>x</mi>
+        <mo>&rarr;</mo>
+        <mi>c</mi>
+      </mrow>
+  </munder>
+  <mtext>f</mtext>
+  <mo>(</mo>
+  <mi>x</mi>
+  <mo>)</mo>
+  <mo>=</mo>
+  <mi>L</mi>
+  <mo>&hArr;</mo>
+  <munder>
+        <mrow>
+          <mi>lim</mi><mo>&ApplyFunction;</mo>
+        </mrow>
+      <mrow>
+        <mi>x</mi>
+        <mo>&rarr;</mo>
+        <msup>
+                <mi>c</mi>
+              <mo>+</mo>
+        </msup>
+      </mrow>
+  </munder>
+  <mtext>f</mtext>
+  <mo>(</mo>
+  <mi>x</mi>
+  <mo>)</mo>
+  <mo>=</mo>
+  <mi>L</mi>
+  <mo>=</mo>
+  <munder>
+        <mrow>
+          <mi>lim</mi><mo>&ApplyFunction;</mo>
+        </mrow>
+      <mrow>
+        <mi>x</mi>
+        <mo>&rarr;</mo>
+        <msup>
+                <mi>c</mi>
+              <mo>-</mo>
+        </msup>
+      </mrow>
+  </munder>
+  <mtext>f</mtext>
+  <mo>(</mo>
+  <mi>x</mi>
+  <mo>)</mo>
+</mrow>
+</math>
+							<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"> <!-- Continuity -->
+<mrow>
+  <munder>
+        <mrow>
+          <mi>lim</mi><mo>&ApplyFunction;</mo>
+        </mrow>
+      <mrow>
+        <mi>x</mi>
+        <mo>&rarr;</mo>
+        <mi>c</mi>
+      </mrow>
+  </munder>
+  <mtext>f</mtext>
+  <mo>(</mo>
+  <mi>x</mi>
+  <mo>)</mo>
+  <mo>=</mo>
+  <mi>f</mi>
+  <mo>(</mo>
+  <mi>c</mi>
+  <mo>)</mo>
+</mrow>
+</math>
+
+					<h3 class="intraheader-section" id="math-differentiation">Differentiation</h3>
+						<h4 class="header-section">Power rule</h4>
+							<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"> <!-- f(x) = ... -->
+<mrow>
+  <mtext>f</mtext>
+  <mo>(</mo>
+  <mtext>x</mtext>
+  <mo>)</mo>
+  <mo>=</mo>
+  <msup>
+          <mtext>x</mtext>
+      <mrow>
+        <mtext>n</mtext>
+        <mo>-</mo>
+        <mn>1</mn>
+      </mrow>
+  </msup>
+</mrow>
+</math>
+							<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"> <!-- f'(x) = ... -->
+<mrow>
+	<msup>
+		<mtext>f</mtext>
+		<mo>&prime;</mo>
+	</msup>
+	<mo>(</mo>
+	<mtext>x</mtext>
+	<mo>)</mo>
+	<mo>=</mo>
+	<mtext>n</mtext>
+	<mo>&CenterDot;</mo>
+	<msup>
+		<mtext>x</mtext>
+		<mrow>
+		<mi>n</mi>
+		<mo>-</mo>
+		<mn>1</mn>
+		</mrow>
+	</msup>
+</mrow>
+</math>
+						<h4 class="header-section">Product rule</h4>
+							<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"> <!-- f(x) = ... -->
+<mrow>
+  <mtext>h</mtext>
+  <mo>(</mo>
+  <mtext>x</mtext>
+  <mo>)</mo>
+  <mo>=</mo>
+  <mtext>f</mtext>
+  <mo>(</mo>
+  <mtext>x</mtext>
+  <mo>)</mo>
+  <mo>&CenterDot;</mo>
+  <mtext>g</mtext>
+  <mo>(</mo>
+  <mtext>x</mtext>
+  <mo>)</mo>
+</mrow>
+</math>
+							<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"> <!-- f'(x) = ... -->
+					<mrow>
+						<mtext>h</mtext>
+						<mo>&prime;</mo>
+						<mo>(</mo>
+						<mtext>x</mtext>
+						<msup>
+               			<mo>)</mo>
+       					</msup>
+       					<mo>=</mo>
+       					<mo>(</mo>
+       					<mtext>f</mtext>
+       					<mo>&CenterDot;</mo>
+       					<mtext>g</mtext>
+       					<msup>
+               			<mo>)</mo>
+             			<mo>&prime;</mo>
+       					</msup>
+       					<mo>=</mo>
+						<msup>
+          				<mtext>f</mtext>
+        				<mo>&prime;</mo>
+  						</msup>
+						<mo>(</mo>
+						<mtext>x</mtext>
+						<mo>)</mo>
+						<mo>&CenterDot;</mo>
+						<mtext>g</mtext>
+						<mo>(</mo>
+						<mtext>x</mtext>
+						<mo>)</mo>
+						<mo>+</mo>
+						<mtext>f</mtext>
+						<mo>(</mo>
+						<mtext>x</mtext>
+						<mo>)</mo>
+						<mo>&CenterDot;</mo>
+						<msup>
+						<mtext>g</mtext>
+        				<mo>&prime;</mo>
+  						</msup>
+  						<mo>(</mo>
+  						<mtext>x</mtext>
+  						<mo>)</mo>
+					</mrow>
+				</math>
+						<h4 class="header-section">Quotient rule</h4>
+							<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"> <!-- f(x) = ... -->
+<mrow>
+  <mtext>h</mtext>
+  <mo>(</mo>
+  <mtext>x</mtext>
+  <mo>)</mo>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <mtext>f</mtext>
+      <mo>(</mo>
+      <mtext>x</mtext>
+      <mo>)</mo>
+    </mrow>
+    <mrow>
+      <mtext>g</mtext>
+      <mo>(</mo>
+      <mtext>x</mtext>
+      <mo>)</mo>
+    </mrow>
+  </mfrac>
+</mrow>
+</math>
+							<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"> <!-- f'(x) = ... -->
+<mrow>
+  <msup>
+          <mtext>h</mtext>
+        <mo>&prime;</mo>
+  </msup>
+  <mo>(</mo>
+  <mtext>x</mtext>
+  <mo>)</mo>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <msup>
+              <mtext>g</mtext>
+            <mo>&prime;</mo>
+      </msup>
+      <mo>(</mo>
+      <mtext>x</mtext>
+      <mo>)</mo>
+      <mo>&CenterDot;</mo>
+      <mtext>f</mtext>
+      <mo>(</mo>
+      <mtext>x</mtext>
+      <mo>)</mo>
+      <mo>-</mo>
+      <mtext>g</mtext>
+      <mo>(</mo>
+      <mtext>x</mtext>
+      <mo>)</mo>
+      <mo>&CenterDot;</mo>
+      <msup>
+              <mtext>f</mtext>
+            <mo>&prime;</mo>
+      </msup>
+      <mo>(</mo>
+      <mtext>x</mtext>
+      <mo>)</mo>
+    </mrow>
+        <mrow>
+  <mo>(</mo>
+  <mtext>g</mtext>
+  <mo>(</mo>
+  <mtext>x</mtext>
+  <mo>)</mo>
+  <msup>
+          <mo>)</mo>
+        <mn>2</mn>
+  </msup>
+        </mrow>
+    </mrow>
+  </mfrac>
+</mrow>
+</math>
+						<h4 class="header-section">Chain rule</h4>
+							<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"> <!-- f(x) = ... -->
+<mrow>
+  <mtext>h</mtext>
+  <mo>(</mo>
+  <mtext>x</mtext>
+  <mo>)</mo>
+  <mo>=</mo>
+  <mtext>g</mtext>
+  <mo>(</mo>
+  <mtext>f</mtext>
+  <mo>(</mo>
+  <mtext>x</mtext>
+  <mo>)</mo>
+  <mo>)</mo>
+</mrow>
+</math>
+							<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"> <!-- f'(x) = ... -->
+<mrow>
+	<msup>
+  <mtext>h</mtext>
+  <mo>&prime;</mo>
+  </msup>
+  <mo>(</mo>
+  <mtext>x</mtext>
+  <mo>)</mo>
+  <mo>=</mo>
+  <mo>(</mo>
+  <mtext>f</mtext>
+  <mo>&compfn;</mo>
+  <mtext>g</mtext>
+  <msup>
+          <mo>)</mo>
+        <mo>&prime;</mo>
+  </msup>
+  <mo>=</mo>
+  <mo>(</mo>
+  <msup>
+          <mtext>f</mtext>
+        <mo>&prime;</mo>
+  </msup>
+  <mo>&compfn;</mo>
+  <mtext>g</mtext>
+  <mo>)</mo>
+  <mo>&CenterDot;</mo>
+  <msup>
+          <mtext>g</mtext>
+        <mo>&prime;</mo>
+  </msup>
+  <mo>=</mo>
+</mrow>
+</math>
+							<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"> <!-- Continued f'(x) = ... -->
+<mrow>
+	<mo>=</mo>
+	<msup>
+	  <mtext>h</mtext>
+	        <mo>&prime;</mo>
+  </msup>
+  <mo>(</mo>
+  <mtext>x</mtext>
+          <mo>)</mo>
+  <mo>=</mo>
+  <msup>
+          <mtext>f</mtext>
+        <mo>&prime;</mo>
+  </msup>
+  <mo>(</mo>
+  <mtext>g</mtext>
+  <mo>(</mo>
+  <mtext>x</mtext>
+  <mo>)</mo>
+  <mo>)</mo>
+  <mo>&CenterDot;</mo>
+  <msup>
+          <mtext>g</mtext>
+        <mo>&prime;</mo>
+  </msup>
+  <mo>(</mo>
+  <mtext>x</mtext>
+  <mo>)</mo>
+</mrow>
+</math>
+						<h4 class="header-section">Logarithmic differentiation</h4>
+							<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"> <!-- f(x) = ... -->
+<mrow>
+  <mtext>y</mtext>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <mo>(</mo>
+      <mn>1</mn>
+      <mo>+</mo>
+      <msup>
+              <mtext>x</mtext>
+            <mn>2</mn>
+      </msup>
+      
+        <mrow>
+          <msup>
+                  <mo>)</mo>
+                <mn>5</mn>
+          </msup>
+          <mo>&CenterDot;</mo>
+          <mo>(</mo>
+          <mn>1</mn>
+          <mo>+</mo>
+          <msup>
+                  <mtext>x</mtext>
+                <mn>3</mn>
+          </msup>
+          <msup>
+                  <mo>)</mo>
+                <mn>8</mn>
+          </msup>
+        </mrow>
+      
+    </mrow>
+    <mrow>
+      <mo>(</mo>
+      <mn>1</mn>
+      <mo>+</mo>
+      <msup>
+              <mtext>x</mtext>
+            <mn>4</mn>
+      </msup>
+      <msup>
+              <mo>)</mo>
+            <mn>7</mn>
+      </msup>
+    </mrow>
+  </mfrac>
+</mrow>
+</math>
+							<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"> <!-- f'(x) = ... -->
+<mrow>
+  <mi>log</mi><mo>&ApplyFunction;</mo>
+  <mi>y</mi>
+  <mo>=</mo>
+  <mn>5</mn>
+  <mi>log</mi><mo>&ApplyFunction;</mo>
+  <mo>(</mo>
+  <mn>1</mn>
+  <mo>+</mo>
+  <msup>
+          <mi>x</mi>
+        <mn>2</mn>
+  </msup>
+  
+      <mo>)</mo>
+  
+  <mo>+</mo>
+  <mn>8</mn>
+  <mi>log</mi><mo>&ApplyFunction;</mo>
+  <mo>(</mo>
+  <mn>1</mn>
+  <mo>+</mo>
+  <msup>
+  	<mi>x</mi>
+  	<mn>3</mn>
+  </msup>
+  <mo>)</mo>
+  <mo>-</mo>
+  <mn>7</mn>
+  <mi>log</mi><mo>&ApplyFunction;</mo>
+  <mo>(</mo>
+  <mn>1</mn>
+  <mo>+</mo>
+  <msup>
+          <mi>x</mi>
+        <mn>4</mn>
+  </msup>
+  <mo>)</mo>
+  <mo>=</mo>
+</mrow>
+</math>
+							<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"> <!-- Continued f'(x) = ... -->
+<mrow>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <mn>1</mn>
+    </mrow>
+    <mrow>
+      <mi>y</mi>
+    </mrow>
+  </mfrac>
+  <mfrac>
+    <mrow>
+      <mtext>d</mtext>
+      <mi>y</mi>
+    </mrow>
+    <mrow>
+      <mtext>d</mtext>
+      <mi>x</mi>
+    </mrow>
+  </mfrac>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <mn>5</mn>
+      <mo>&CenterDot;</mo>
+      <mn>2</mn>
+      <mi>x</mi>
+    </mrow>
+    <mrow>
+      <mn>1</mn>
+      <mo>+</mo>
+      <msup>
+              <mi>x</mi>
+            <mn>2</mn>
+      </msup>
+    </mrow>
+  </mfrac>
+  <mo>+</mo>
+  <mfrac>
+    <mrow>
+      <mn>8</mn>
+      <mo>&CenterDot;</mo>
+      <mn>3</mn>
+      <msup>
+      	<mi>x</mi>
+      	<mn>2</mn>
+      </msup>
+    </mrow>
+    <mrow>
+      <mn>1</mn>
+      <mo>+</mo>
+      <msup>
+              <mi>x</mi>
+            <mn>3</mn>
+      </msup>
+    </mrow>
+  </mfrac>
+  <mo>-</mo>
+  <mfrac>
+    <mrow>
+      <mn>7</mn>
+      <mo>&CenterDot;</mo>
+		<mn>4</mn>
+		<msup>
+        	<mi>x</mi>
+        	<mn>3</mn>
+       </msup>
+    </mrow>
+    <mrow>
+      <mn>1</mn>
+      <mo>+</mo>
+      <msup>
+              <mi>x</mi>
+            <mn>4</mn>
+      </msup>
+    </mrow>
+  </mfrac>
+  <mo>=</mo>
+</mrow>
+</math>
+							<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"> <!-- Continued f'(x) = ... -->
+<mrow>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <mtext>d</mtext>
+      <mi>y</mi>
+    </mrow>
+    <mrow>
+      <mtext>d</mtext>
+      <mi>x</mi>
+    </mrow>
+  </mfrac>
+  <mo>=</mo>
+  <mo>(</mo>
+  <mfrac>
+    <mrow>
+      <mn>5</mn>
+      <mo>&CenterDot;</mo>
+      <mn>2</mn>
+      <mi>x</mi>
+    </mrow>
+    <mrow>
+      <mn>1</mn>
+      <mo>+</mo>
+      <msup>
+              <mi>x</mi>
+            <mn>2</mn>
+      </msup>
+    </mrow>
+  </mfrac>
+  <mo>+</mo>
+  <mfrac>
+    <mrow>
+      <mn>8</mn>
+      <mo>&CenterDot;</mo>
+      <mn>3</mn>
+      <msup>
+      	<mi>x</mi>
+      	<mn>2</mn>
+      </msup>
+    </mrow>
+    <mrow>
+      <mn>1</mn>
+      <mo>+</mo>
+      <msup>
+              <mi>x</mi>
+            <mn>3</mn>
+      </msup>
+    </mrow>
+  </mfrac>
+  <mo>-</mo>
+  <mfrac>
+    <mrow>
+      <mn>7</mn>
+      <mo>&CenterDot;</mo>
+      <mn>4</mn>
+      <msup>
+          <mi>x</mi>
+          <mn>3</mn>
+      </msup>
+    </mrow>
+    <mrow>
+      <mn>1</mn>
+      <mo>+</mo>
+      <msup>
+              <mi>x</mi>
+            <mn>4</mn>
+      </msup>
+    </mrow>
+  </mfrac>
+  <mo>)</mo>
+  <mi>y</mi>
+  <mo>=</mo>
+</mrow>
+</math>
+							<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"> <!-- Continued f'(x) = ... -->
+<mrow>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <mtext>d</mtext>
+      <mi>y</mi>
+    </mrow>
+    <mrow>
+      <mtext>d</mtext>
+      <mi>x</mi>
+    </mrow>
+  </mfrac>
+  <mo>=</mo>
+  <mo>(</mo>
+  <mfrac>
+    <mrow>
+      <mn>1</mn>
+      <mn>0</mn>
+      <mi>x</mi>
+    </mrow>
+    <mrow>
+      <mn>1</mn>
+      <mo>+</mo>
+      <msup>
+              <mi>x</mi>
+            <mn>2</mn>
+      </msup>
+    </mrow>
+  </mfrac>
+  <mo>+</mo>
+  <mfrac>
+    <mrow>
+      <mn>2</mn>
+      <mn>4</mn>
+      <msup>
+              <mi>x</mi>
+            <mn>2</mn>
+      </msup>
+    </mrow>
+    <mrow>
+      <mn>1</mn>
+      <mo>+</mo>
+      <msup>
+              <mi>x</mi>
+            <mn>3</mn>
+      </msup>
+    </mrow>
+  </mfrac>
+  <mo>-</mo>
+  <mfrac>
+    <mrow>
+      <mn>2</mn>
+      <mn>8</mn>
+      
+        <mrow>
+          <msup>
+                  <mi>x</mi>
+                <mn>3</mn>
+          </msup>
+        </mrow>
+      
+    </mrow>
+    <mrow>
+      <mn>1</mn>
+      <mo>+</mo>
+      <msup>
+              <mi>x</mi>
+            <mn>4</mn>
+      </msup>
+    </mrow>
+  </mfrac>
+  <mo>)</mo>
+  <mo>(</mo>
+  <mfrac>
+    <mrow>
+      <mo>(</mo>
+      <mn>1</mn>
+      <mo>+</mo>
+      <msup>
+              <mi>x</mi>
+            <mn>2</mn>
+      </msup>
+      <msup>
+              <mo>)</mo>
+            <mn>5</mn>
+      </msup>
+      <mo>&CenterDot;</mo>
+      <mo>(</mo>
+      <mn>1</mn>
+      <mo>+</mo>
+      <msup>
+              <mi>x</mi>
+            <mn>3</mn>
+      </msup>
+      <msup>
+              <mo>)</mo>
+            <mn>8</mn>
+      </msup>
+    </mrow>
+    <mrow>
+      <mo>(</mo>
+      <mn>1</mn>
+      <mo>+</mo>
+      <msup>
+              <mi>x</mi>
+            <mn>4</mn>
+      </msup>
+      <msup>
+              <mo>)</mo>
+            <mn>7</mn>
+      </msup>
+    </mrow>
+  </mfrac>
+  <mo>)</mo>
+</mrow>
+</math>
+							
+					<h3 class="intraheader-section" id="math-integration">Integration</h3>
+			</div>
+		</div>
+		<div class="row"> <!-- Section divider -->
+			<div class="col-md-12">
+				<hr> <!-- Horizontal rule -->
+			</div>
+		</div>
+		<div class="row"> <!-- Footer -->
+			<div class="col-md-12">
+				<p>footer</p>
+			</div>
+		</div> <!-- Footer ends -->
+		<div class="row"> <!-- Section divider -->
+			<div class="col-md-12"> <!-- Section divider -->
+				<hr> <!-- Horizontal rule -->
+			</div>
+		</div> <!-- Section divider ends -->
+		<div class="row">
+			<div class="col-md-12">
+				<p>Resources used: 
+					<a href="https://getbootstrap.com" target="_blank" title="Go to bootstrap website | new tab">Bootstrap</a> (incl. 
+					<a href="https://getbootstrap.com/components/#glyphicons" target="_blank" title="Go to Bootstrap: glyphicons | new tab">glyphicons</a>), 
+					<a href="www.firemath.info" target="_blank" title="Go to firemath | new tab">Firemath: Firefox extention</a> in conjunction with 
+					<a href="https://www.mathjax.org/" target="_blank" title="Go to mathjax website | new tab">Mathjax</a></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
