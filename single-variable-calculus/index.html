@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<link rel="icon" href="../graphics/Pi-32.png" type="image/x-icon">
 		<!-- For Edge -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<!-- -->
@@ -29,7 +30,7 @@
 <body  id="top">
 	<div class="container">
 		<nav class="navbar navbar-fixed-top navbar-inverse"> <!-- Main navigation; navbar, static -->
-			<div class="container-fluid  navbar-right">
+			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
       				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -41,9 +42,7 @@
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      				<ul class="nav navbar-nav">
-      					<li><a href="../index.html">Math | Homepage</a></li>
-      					<li><a href="../linear-algebra/index.html">Linear algebra: <br>Study notes</a></li>
+      				<ul class="nav navbar-nav navbar-right">
       					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Study notes<span class="caret"></span></a>
           					<ul class="dropdown-menu">
           						<li><a href="#notes-limits">Limits</a></li>
@@ -60,7 +59,18 @@
           				</li>				
       					<li><a href="#top">Go to top</a></li> <!-- Go to top of page -->
       				</ul>
+      				<ul class="nav navbar-nav navbar-left">
+      				    <li><a href="../index.html"><img src="../graphics/Home-32.png" alt="Go to homepage" title="Go to homepage"></a></li>
+      				    <li><a href="../single-variable-calculus/index.html">Single variable calculus: <br>Study notes</a></li>
+      					<li><a href="../single-variable-calculus/examples.html">Single variable calculus: <br>Examples</a></li>
+      					<li><a href="../linear-algebra/index.html">Linear algebra: <br>Study notes</a></li>
+      					<li><a href="../linear-algebra/examples.html">Linear algebra: <br>Examples</a></li>
+      				</ul>
       			</div>
+      			<ol class="breadcrumb">
+                    <li><a href="../index.html">Math</a></li>
+                    <li class="active">Single variable calculus: Study notes</li>
+                </ol>
       		</div>
       	</nav>	
 		<div class="row"><!-- Page heading -->
@@ -76,23 +86,23 @@
 				<hr> <!-- Horizontal rule -->
 			</div>
 		</div>
-		<div class="row"> <!-- Study notes -->
-			<div class="col-md-6">
+		<div class="row"> <!-- Main content -->
+			<div class="col-md-6"> <!-- Study notes -->
 				<h2 class="header-section" id="#">Study notes</h2>
 					<h3 class="intraheader-section" id="notes-limits">Limits &amp; continuity</h3>
 						<h4>Limits</h4>
-						<p>A specific value "in" function can be approached from two sides, the negative side (from the left) and from the positive side (from the right). If the limits from the left side and the right side are not equal, then the function has no limit and therefore the function is not continuous and therefore is not differentiable.</p>
-						<p>The sum of the limits is the limit of the sum.<span> The sum property</span> L+M</p>
-						<p>The difference of the limits is the limit of the difference. <span>The difference property</span>L-M</p>
-						<p>The product of the limits is the limit of the products. <span>The product property</span> L*M</p>
-						<p>The quotient of the limits is the limit of the quotient. <span>The quotient property</span> L/M</p>
-						<p>A constant times a limit is the constant multiple of the limit. <span>The multiple property</span> k*L</p>
-						<p>The limit of an function raised to the power of r/s is the limit raised to the power r/s, where s is non zero.<span>The exponent property</span> L^(r/s)</p>
+                            <p>A specific value "in" function can be approached from two sides, the negative side (from the left) and from the positive side (from the right). If the limits from the left side and the right side are not equal, then the function has no limit and therefore the function is not continuous and therefore is not differentiable.</p>
+                            <p>The sum of the limits is the limit of the sum.<span> The sum property</span> L+M</p>
+                            <p>The difference of the limits is the limit of the difference. <span>The difference property</span>L-M</p>
+                            <p>The product of the limits is the limit of the products. <span>The product property</span> L*M</p>
+                            <p>The quotient of the limits is the limit of the quotient. <span>The quotient property</span> L/M</p>
+                            <p>A constant times a limit is the constant multiple of the limit. <span>The multiple property</span> k*L</p>
+                            <p>The limit of an function raised to the power of r/s is the limit raised to the power r/s, where s is non zero.<span>The exponent property</span> L^(r/s)</p>
 						<h4>Continuity</h4>
-						<p>For a function, f(x), to be continuous a limit, L, has to exist and that limit has to equal f(c) when x = c. A function can be continuous within an interval or at the endpoints/boundarypoints. For the first case the limits has to hold from both sides, but at the endpoints only the limit coming from within the function domain (usually called the intervall (a, b)).</p>
+                            <p>For a function, f(x), to be continuous a limit, L, has to exist and that limit has to equal f(c) when x = c. A function can be continuous within an interval or at the endpoints/boundarypoints. For the first case the limits has to hold from both sides, but at the endpoints only the limit coming from within the function domain (usually called the intervall (a, b)).</p>
 					<h3 class="intraheader-section" id="notes-differentiation">Differentiation</h3>
 						<p>Differentiation is about the study of change.</p>
-						<p>In order to study that change a function has to be continous.</p>
+                        <p>In order to study that change a function has to be continous.</p>
 						<h4>Power rule</h4>
 							<p>The very basic rule of how to differentiate. It comes from the definition of the derivative and simplifies into this rule.</p>
 						<h4>Product rule</h4>
@@ -108,16 +118,18 @@
 								.</p>
 						<h4>Chain rule</h4>
 							<p>Now things become tricky; what if one function is the input to another function, in other words one function is nested inside another function? The chain rule comes to the rescue!</p>
-						<h4>The derivative of <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
-												<mrow>
-													<mi>ln</mi><mo>&ApplyFunction;</mo>
-													<mi>x</mi>
-												</mrow>
-												</math>
-							</h4>
+						<h4>The derivative of 
+                            <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML">
+								<mrow>
+									<mi>ln</mi><mo>&ApplyFunction;</mo>
+									<mi>x</mi>
+								</mrow>
+							</math>
+						</h4>
 							<p>test</p>
 						<h4>Logarithmic differentiation</h4>
 							<p>At this point we can differentiate a lot of different functions and their combinations, but things can get quite time-consuming, messy and prone to calculation misstakes. To simplify matters, we can recall the way logarithms work and apply them as an intermediate step before doing the differentiation in order to simplify our calculations!</p>
+						<h4>Derivation of trigonometric functions</h4>
 					<h3 class="intraheader-section" idid="notes-integration">Integration</h3>
 						<p>Change backwards.</p>
 			</div>
@@ -851,7 +863,7 @@
 		</div>
 		<div class="row"> <!-- Footer -->
 			<div class="col-md-12">
-				<p>footer</p>
+				<p class="header-section">Written by Jakob Papirov, Uppsala, Sweden 2016</p>
 			</div>
 		</div> <!-- Footer ends -->
 		<div class="row"> <!-- Section divider -->
@@ -861,13 +873,26 @@
 		</div> <!-- Section divider ends -->
 		<div class="row">
 			<div class="col-md-12">
-				<p>Resources used: 
-					<a href="https://getbootstrap.com" target="_blank" title="Go to bootstrap website | new tab">Bootstrap</a> (incl. 
-					<a href="https://getbootstrap.com/components/#glyphicons" target="_blank" title="Go to Bootstrap: glyphicons | new tab">glyphicons</a>), 
-					<a href="www.firemath.info" target="_blank" title="Go to firemath | new tab">Firemath: Firefox extention</a> in conjunction with 
-					<a href="https://www.mathjax.org/" target="_blank" title="Go to mathjax website | new tab">Mathjax</a></p>
-			</div>
+                <h5 class="header-section">Resources used</h5>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                     <h6>Design</h6>
+                        <a href="https://getbootstrap.com" target="_blank" title="Go to bootstrap website | new tab">Bootstrap</a> (incl.  
+                        <a href="https://getbootstrap.com/components/#glyphicons" target="_blank" title="Go to Bootstrap: glyphicons | new tab">glyphicons</a>)
+                </div>
+                <div class="col-md-4">
+                    <h6>Icons</h6>
+                        <a href="http://www.famfamfam.com/lab/icons/silk/" target="_blank" title="Go to famfamfam icons | new tab">famfamfam</a>, 
+                        <a href="https://icons8.com/" target="_blank" title="Go to icons8">icons8</a>
+                </div>
+                <div class="col-md-4">
+                    <h6>Math</h6>
+                        <a href="www.firemath.info" target="_blank" title="Go to firemath | new tab">Firemath: Firefox extention</a> in conjunction with 
+                        <a href="https://www.mathjax.org/" target="_blank" title="Go to mathjax website | new tab">Mathjax</a>
+                </div>
+            </div>
 		</div>
-	</div>
+	</div> <!-- container ends -->
 </body>
 </html>
