@@ -29,52 +29,61 @@
 </head>
 <body id="top">
 	<div class="container">
-		<nav class="navbar navbar-fixed-top navbar-inverse"> <!-- Main navigation; navbar, static -->
+		<nav class="navbar navbar-fixed-top navbar-inverse"> <!-- Main navigation; navbar, fixed -->
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
-      				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        				<span class="sr-only">Toggle navigation</span>
-        				<span class="icon-bar"></span> <!-- Dash one -->
-        				<span class="icon-bar"></span> <!-- Dash two -->
-        				<span class="icon-bar"></span> <!-- Dash three -->
-      				</button>
+      		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        		<span class="sr-only">Toggle navigation</span>
+        		<span class="icon-bar"></span> <!-- Dash one -->
+        		<span class="icon-bar"></span> <!-- Dash two -->
+        		<span class="icon-bar"></span> <!-- Dash three -->
+      		</button>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      				<ul class="nav navbar-nav navbar-right">
-      					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Study notes<span class="caret"></span></a>
-          					<ul class="dropdown-menu">
+      		<ul class="nav navbar-nav navbar-right">
+      			<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Study notes<span class="caret"></span></a>
+          		<ul class="dropdown-menu">
 								<li><a href="#notes-matrix-arithmetic">Matrix arithmetic</a></li>
 								<li><a href="#notes-determinants">Determinants</a></li>		
 								<li><a href="#notes-linear-equations">Linear equations</a></li>					
 			 					<li><a href="#notes-vectors">Vectors</a></li>
-          					</ul>
-        				</li>
+          			</ul>
+        		</li>
 						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mathematics<span class="caret"></span></a>
-          					<ul class="dropdown-menu">
-          						<li><a href="#math-matrix-arithmetic">Matrix arithmetic</a></li>
-          						<li><a href="#math-determinants">Determinants</a></li>
-          						<li><a href="#math-linear-equations">Linear equations</a></li>
-          						<li><a href="#math-vectors">Vectors</a></li>
-          					</ul>
-          				</li>
-          				<li><a href="#top">Go to top</a></li> <!-- Go to top of page -->
+          		<ul class="dropdown-menu">
+          			<li><a href="#math-matrix-arithmetic">Matrix arithmetic</a></li>
+          			<li><a href="#math-determinants">Determinants</a></li>
+          			<li><a href="#math-linear-equations">Linear equations</a></li>
+          			<li><a href="#math-vectors">Vectors</a></li>
+          		</ul>
+          	</li>
+          	<li><a href="#top">Go to top</a></li> <!-- Go to top of page -->
 					</ul>
 					<ul class="nav navbar-nav navbar-left">
-					    <li><a href="../index.html"><img src="../graphics/Home-32.png" alt="Go to homepage" title="Go to homepage"></a></li>
-                        <li><a href="../single-variable-calculus/index.html">Single variable calculus: <br>Study notes</a></li>
-                        <li><a href="../single-variable-calculus/examples.html">Single variable calculus: <br>Examples</a></li>
-                        <li><a href="../linear-algebra/index.html">Linear algebra: <br>Study notes</a></li>
-                        <li><a href="../linear-algebra/examples.html">Linear algebra: <br>Examples</a></li>
+					  <li><a href="../index.html"><img src="../graphics/Home-32.png" alt="Go to homepage" title="Go to homepage"></a></li>
+            <li><a href="../single-variable-calculus/index.html">Single variable calculus: <br>Study notes</a></li>
+            <li><a href="../single-variable-calculus/examples.html">Single variable calculus: <br>Examples</a></li>
+            <li><a href="../linear-algebra/index.html">Linear algebra: <br>Study notes</a></li>
+            <li><a href="../linear-algebra/examples.html">Linear algebra: <br>Examples</a></li>
 					</ul>
 				</div>
-				<ol class="breadcrumb">
-                    <li><a href="../index.html">Math</a></li>
-                    <li class="active">Linear algebra: Study notes</li>
-                </ol>
 			</div>
-		</nav> <!-- Nav ends -->
+		</nav>  <!-- Main navigation; navbar, static ends -->
+		<div class="github-box"> <!-- GitHub box -->
+      <div class="github-circle"> <!-- GitHub circle -->
+        <div class="row">
+          <div class="col-md-6 github-repo">
+            <a href="https://github.com/JakobPapirov/math" target="_blank" title="The repository!">Hosted on</a>
+          </div>
+          <div class="col-md-6 github-site">
+            <a href="https://github.com/" target="_blank" title="GitHub <3">
+            <img class="github-img" src="../graphics/GitHub-32.png" alt="GitHub" title="GitHub <3"></a>
+          </div>
+        </div>
+      </div> <!-- GitHub circle ends -->
+    </div> <!-- GitHub box ends -->
 		<div class="row"> <!-- Page heading -->
 			<div class="col-md-12"> <!-- Takes upp 100% row -->
 				<div class="page-title">
@@ -88,55 +97,153 @@
 				<hr> <!-- Horizontal rule -->
 			</div>
 		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<ol class="breadcrumb">
+          <li><a href="../index.html" title="Home">Math</a></li>
+          <li class="active" title="You are here!">Linear algebra: Study notes</li>
+        </ol>
+			</div>
+		</div>
+		<div class="row"> <!-- Section divider -->
+			<div class="col-md-12">
+				<hr> <!-- Horizontal rule -->
+			</div>
+		</div>
 		<div class="row"> <!-- Study notes -->
 			<div class="col-md-6"> <!-- Takes up 50% of row-->
 				<h2 class="header-section" id="notes">Study notes</h2>
-					<h3 class="intraheader-section" id="notes-matrix-arithmetic">Matrix arithmetic</h3>
-						<p></p>
-						<h4>What is a matrix?</h4>
-							<p></p>
-						<h4>Matrix addition</h4>
-							<p></p>
-						<h4>Matrix subtraction</h4>
-							<p></p>
-						<h4>Matrix multiplication</h4>
-							<p></p>
-						<h4>Matric division</h4>
-							<p></p>
-					<h3 class="intraheader-section" id="notes-determinants">Determinants</h3>
-						<p></p>
-						<h4>What is a determinant</h4>
-							<p></p>
+					<h3 class="between-sections" id="notes-matrix-arithmetic">Matrix arithmetic</h3>
+						<p>In mathemaics we can add, subtract, multiply and divide. But how can we do this with matrices? This section will explain matrix atrithmetic from a algebraic point of view. This subject will be revisited in the section on <a href="#notes-vectors">vectors</a>.</p>
+						<h4 class="inbetween-sections">What is a matrix?</h4>
+							<p>Simply put, a matrix an ordered grid of numbers representing something concrete but in an more abstract and efficient way. Usually, in examples, matrices are called A, B, C, and etc (capital lettering) and each number within a matrix is called an element and has a position. You start with the element in the top and left most position and call it 
+								<math display="inline"> <!-- A_11 -->
+								<mstyle displaystyle="true">
+									<msub>      <mrow>        <mi> A </mi>      </mrow>      <mrow>        <mn> 11 </mn>      </mrow>    </msub>
+								</mstyle>
+								</math>
+							because it's on the first <strong>row</strong> and first <strong>column</strong>.</p>
+							<p>Matrix dimensions are usually denoted 
+								<math display="inline"> <!-- [2x3] --> 
+									<mstyle displaystyle="true">
+										<mrow>  <munder>        <mrow>          <mi>A</mi><mo>&ApplyFunction;</mo>        </mrow>      <mrow>        <mo>[</mo>        <mn>2</mn>        <mo>&times;</mo>        <mn>3</mn>        <mo>]</mo>      </mrow>  </munder></mrow>
+									</mstyle>
+								</math>
+							for a matrix with two rows and three columns.</p>
+						<h4 class="inbetween-sections">Matrix addition</h4>
+							<p>In order to be able to add to matrices together, you first have to make sure that the dimensions of the matrices are the same. That is because when you do matrix addition you add an element in the first matrix (A) with the corresponding element in the other matrix (B).
+							So when you add matrices, you add individual elements 
+								<math display="inline"><!-- A_11 + B_11 = C_11-->
+									<mstyle displaystyle="true">
+									<msub>      <mrow>        <mi> A </mi>      </mrow>      <mrow>        <mn> 11 </mn>      </mrow>
+									</msub> <mo> + </mo>
+									<msub>      <mrow>        <mi> B </mi>      </mrow>      <mrow>        <mn> 11 </mn>      </mrow>    </msub>
+									<mo> = </mo>
+									<msub>      <mrow>        <mi> C </mi>      </mrow>      <mrow>        <mn> 11 </mn>      </mrow>
+									</msub>
+									</mstyle>
+								</math>
+							That is why your matrices have to have the same dimensions.
+							</p>
+						<h4 class="inbetween-sections">Matrix subtraction</h4>
+							<p>Matrix subtraction works in the same but opposite way as with matrix addition. Something important to note here is that the order in which you do the addition or the subtraction doesn't matter, meaning that 
+								<math display="inline">
+									<mstyle displaystyle="true">
+										<mi> A </mi>    <mo> + </mo>    <mi> B </mi>    <mo> = </mo>    <mi> B </mi>    <mo> + </mo>    <mi> A </mi>
+									</mstyle>
+								</math>
+							and
+								<math display="inline">
+									<mstyle displaystyle="true">
+										<mfenced>      <mrow>        <mi> A </mi>        <mo> + </mo>        <mi> B </mi>      </mrow>    </mfenced>    <mo> + </mo>    <mi> C </mi>    <mo> = </mo>    <mfenced>      <mrow>        <mi> A </mi>        <mo> + </mo>        <mi> C </mi>      </mrow>    </mfenced>    <mo> + </mo>    <mi> B </mi>
+									</mstyle>
+								</math>
+							.</p>
+						<h4 class="inbetween-sections">Matrix multiplication</h4>
+							<p>Due to the algorithm involved in calculating matrix multiplication the order matters and the dimensions have to follow a certain rule [m x n] * [n * m].</p>
+						<h4 class="inbetween-sections">Matrix division</h4>
+							<p>Matrix division can be thought as finding the inverse to your matrix. There are two ways you can find the inverse of a matrix. You can go from matrix A to matrix B and in the end you can find x or you can use a formulae that requries you to use something called the <a href="#notes-determinants">determinant</a>.</p>
+					<h3 class="between-sections" id="notes-determinants">Determinants</h3>
+						<p>Determinants are very important!</p>
+						<h4 class="inbetween-sections">What is a determinant</h4>
+							<p>Finding a determinant, means that a matrix is invertible. For this to happen the determinant has to be 
+								<math display="inline">
+									<mstyle displaystyle="true">
+										<mo> &#x2260;<!--not equal to--> </mo>
+									</mstyle>
+								</math>
+							0.</p>
 						<h4>How to determine the determinant?</h4>
-							<p></p>
-					<h3 class="intraheader-section" id="notes-linear-equations">Solving a system of equations</h3>
+							<p>When calculating the determinant, you use another notation the standard matrix notation of [ ], for determinants you use | |. There is a forumula for calculating a 
+								<math display="inline">
+									<mstyle displaystyle="true">
+										<mfenced open="[" close="]">      <mrow>        <mn> 2 </mn>        <mo> &#x00D7;<!--multiplication sign--> </mo>        <mn> 2 </mn>      </mrow>    </mfenced> 
+									</mstyle>
+								</math>
+							determinant. But what do you do when you have a 
+								<math display="inline">
+									<mstyle displaystyle="true">
+										<mfenced open="[" close="]">      <mrow>        <mn> 4 </mn>        <mo> &#x00D7;<!--multiplication sign--> </mo>        <mn> 4 </mn>      </mrow>    </mfenced> 
+									</mstyle>
+								</math>
+								matrix? You then have to divide the matrix up, until you can solve for the standard determinant and work your way backwards.</p>
+								<p>The trick is start with the smallest number, preferably 0 and expand along that element. A completely symmetrical matrix will have a zero determinant.</p>
+					<h3 class="between-sections" id="notes-linear-equations">Solving a system of equations</h3>
 						<p></p>
-						<h4>Gaussian elimination</h4>
+						<h4 class="inbetween-sections">Gaussian elimination</h4>
 							<p></p>
-						<h4>Gauss-Jordan elimination</h4>
+						<h4 class="inbetween-sections">Gauss-Jordan elimination</h4>
 							<p></p>
-					<h3 class="intraheader-section" id="notes-vectors">Vectors and stuff</h3>
+					<h3 class="between-sections">Eigen values</h3>
+					<h3 class="between-sections" id="notes-vectors">Vectors and stuff</h3>
 						<p></p>
-						<h4>The distance between a point and a plane</h4>
+						<h4 class="inbetween-sections">The distance between a point and a plane</h4>
 							<p></p>
-						<h4>How to calculate the area of a triangle?</h4>
+						<h4 class="inbetween-sections">How to calculate the area of a triangle?</h4>
 							<p></p>
 			</div>
 			<div class="col-md-6"> <!-- Takes up 50% of row -->
 				<h2 class="header-section" id="formulas">Mathematical formulas and stuff</h2>
-					<h3 class="intraheader-section" id="math-matrix-arithmetic">Matrix arithmetic</h3>
-						<h4 class="header-section">Matrix addition</h4>
-						<h4 class="header-section">Matrix subtraction</h4>
-						<h4 class="header-section">Matrix multiplication</h4>
-						<h4 class="header-section">Matric division</h4>
-					<h3 class="intraheader-section" id="math-determinants">Determinants</h3>
-						<h4 class="header-section">How to determine the determinant?</h4>
-					<h3 class="intraheader-section" id="math-linear-equations">Solving a system of equations</h3>
-						<h4 class="header-section">Gaussian elimination</h4>
-						<h4 class="header-section">Gauss-Jordan elimination</h4>
-					<h3 class="intraheader-section" id="math-vectors">Vectors and stuff</h3>
-						<h4 class="header-section">The distance between a point and a plane</h4>
-						<h4 class="header-section">How to calculate the area of a triangle?</h4>
+					<h3 class="between-sections" id="math-matrix-arithmetic">Matrix arithmetic</h3>
+						<h4 class="header-section inbetween-sections">Matrix addition</h4>
+							<math display="block">
+								<mstyle displaystyle="true">
+									<mi> A </mi>    <mo> + </mo>    <mi> B </mi>    <mo> = </mo>    <mi> c </mi>
+								</mstyle>
+							</math>
+						<h4 class="header-section inbetween-sections">Matrix subtraction</h4>
+							<math display="block">
+								<mstyle displaystyle="true">
+									<mi> A </mi>    <mo> - </mo>    <mi> B </mi>    <mo> = </mo>    <mi> c </mi> 
+								</mstyle>
+							</math>
+						<h4 class="header-section inbetween-sections">Matrix multiplication</h4>
+							<math display="block">
+								<mstyle displaystyle="true">
+									<mtable columnalign="left">      <mtr>        <mtd>          <mi> s </mi>          <mo> = </mo>          <mi> s </mi>          <mi> c </mi>          <mi> a </mi>          <mi> l </mi>          <mi> a </mi>          <mi> r </mi>        </mtd>      </mtr>      <mtr>        <mtd>          <mi> A </mi>          <mo> = </mo>          <mfenced open="[" close="]">            <mrow>              <mtable>                <mtr>                  <mtd>                    <mi> a </mi>                  </mtd>                  <mtd>                    <mi> b </mi>                  </mtd>                </mtr>                <mtr>                  <mtd>                    <mi> c </mi>                  </mtd>                  <mtd>                    <mi> d </mi>                  </mtd>                </mtr>              </mtable>            </mrow>          </mfenced>        </mtd>      </mtr>      <mtr>        <mtd>          <mi> s </mi>          <mi> A </mi>          <mo> = </mo>          <mfenced open="[" close="]">            <mrow>              <mtable>                <mtr>                  <mtd>                    <mi> s </mi>                    <mi> a </mi>                  </mtd>                  <mtd>                    <mi> s </mi>                    <mi> b </mi>                  </mtd>                </mtr>                <mtr>                  <mtd>                    <mi> s </mi>                    <mi> c </mi>                  </mtd>                  <mtd>                    <mi> s </mi>                    <mi> d </mi>                  </mtd>                </mtr>              </mtable>            </mrow>          </mfenced>        </mtd>      </mtr>    </mtable>
+								</mstyle>
+							</math>
+							<math display="block">
+								<mstyle displaystyle="true">
+									<mtable columnalign="left">      <mtr>        <mtd>          <mi> A </mi>          <mo> = </mo>          <mfenced open="[" close="]">
+      							<mrow>        <mtable>          <mtr>            <mtd>              <mi> a </mi>            </mtd>            <mtd>              <mi> b </mi></mtd>          </mtr>          <mtr>            <mtd>              <mi> c </mi>            </mtd>            <mtd>              <mi> d </mi></mtd>          </mtr>        </mtable>      </mrow>    </mfenced>          <mo> , </mo>          <mi> B </mi>       <mo> = </mo>          <mfenced open="[" close="]">      <mrow>        <mtable>          <mtr>            <mtd>              <mi> e </mi>          </mtd>	<mtd>      <mi> f </mi>            </mtd>          </mtr>          <mtr>            <mtd>         <mi> g </mi>           </mtd>            <mtd><mi> h </mi>	</mtd>          </mtr>        </mtable>      </mrow>    </mfenced>        </mtd>      </mtr>      <mtr>        <mtd>          <mi> A </mi>          <mi> B </mi>          <mo> = </mo>          <mi> C </mi>        </mtd>      </mtr>    </mtable>
+								</mstyle>
+							</math>
+						<h4 class="header-section inbetween-sections">Matrix division</h4>
+
+					<h3 class="between-sections" id="math-determinants">Determinants</h3>
+						<h4 class="header-section inbetween-sections">How to determine the determinant?</h4>
+							<math display="block"> 
+								<mstyle displaystyle="true">
+									<mtable columnalign="left">      <mtr>        <mtd>          <mi> A </mi>          <mo> = </mo>          <mfenced open="[" close="]">            <mrow>              <mtable>                <mtr>                  <mtd>                    <mi> a </mi>                  </mtd>                  <mtd>                    <mi> b </mi>                  </mtd>                </mtr>                <mtr>                  <mtd>                    <mi> c </mi>                  </mtd>                  <mtd>                    <mi> d </mi>                  </mtd>                </mtr>              </mtable>            </mrow>          </mfenced>        </mtd>      </mtr>      <mtr>        <mtd>          <mi> det </mi>          <mfenced>            <mrow>              <mi> A </mi>            </mrow>          </mfenced>          <mo> = </mo>          <mfenced open="|" close="|">            <mrow>              <mtable>                <mtr>                  <mtd>                    <mi> a </mi>                  </mtd>                  <mtd>                    <mi> b </mi>                  </mtd>                </mtr>                <mtr>                  <mtd>                    <mi> c </mi>                  </mtd>                  <mtd>                    <mi> d </mi>                  </mtd>                </mtr>              </mtable>            </mrow>          </mfenced>        </mtd>      </mtr>      <mtr>        <mtd>          <mi> det </mi>          <mfenced>            <mrow>              <mi> A </mi>            </mrow>          </mfenced>          <mo> = </mo>          <mfenced>            <mrow>              <mi> a </mi>              <mi> d </mi>            </mrow>          </mfenced>          <mo> - </mo>          <mfenced>            <mrow>              <mi> b </mi>              <mi> c </mi>            </mrow>          </mfenced>        </mtd>      </mtr>    </mtable>
+								</mstyle>
+							</math>
+					<h3 class="between-sections" id="math-linear-equations">Solving a system of equations</h3>
+						<h4 class="header-section inbetween-sections">Gaussian elimination</h4>
+						<h4 class="header-section inbetween-sections">Gauss-Jordan elimination</h4>
+					<h3 class="between-sections" id="math-vectors">Vectors and stuff</h3>
+						<h4 class="header-section inbetween-sections">The distance between a point and a plane</h4>
+						<h4 class="header-section inbetween-sections">How to calculate the area of a triangle?</h4>
 			</div>
 		</div>
 		<div class="row"> <!-- Section divider -->
@@ -144,38 +251,33 @@
 				<hr> <!-- Horizontal rule -->
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-12">
-				<p class="header-section">Written by Jakob Papirov, Uppsala, Sweden 2016</p>
-			</div>
-		</div>
+		<footer>
+			<p>Written by Jakob Papirov, Uppsala, Sweden 2016</p>
+		</footer>
 		<div class="row"> <!-- Section divider -->
 			<div class="col-md-12">
 				<hr> <!-- Horizontal rule -->
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-12">
-                <h5 class="header-section">Resources used</h5>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                     <h6>Design</h6>
-                        <a href="https://getbootstrap.com" target="_blank" title="Go to bootstrap website | new tab">Bootstrap</a> (incl.  
-                        <a href="https://getbootstrap.com/components/#glyphicons" target="_blank" title="Go to Bootstrap: glyphicons | new tab">glyphicons</a>)
-                </div>
-                <div class="col-md-4">
-                    <h6>Icons</h6>
-                        <a href="http://www.famfamfam.com/lab/icons/silk/" target="_blank" title="Go to famfamfam icons | new tab">famfamfam</a>, 
-                        <a href="https://icons8.com/" target="_blank" title="Go to icons8">icons8</a>
-                </div>
-                <div class="col-md-4">
-                    <h6>Math</h6>
-                        <a href="www.firemath.info" target="_blank" title="Go to firemath | new tab">Firemath: Firefox extention</a> in conjunction with 
-                        <a href="https://www.mathjax.org/" target="_blank" title="Go to mathjax website | new tab">Mathjax</a>
-                </div>
-            </div>
-		</div>
+		<div class="row resources"> <!-- Resources used -->
+			<div class="row">
+        <div class="col-md-12">
+          <h5 class="">Resources used</h5>
+        </div>
+      </div>
+      <div class="row">
+      	<div class="col-md-4">
+          <a href="jakobpapirov.se/resources#main" target="_blank" title="General"><img src="../graphics/Book Stack-32.png"></a>
+         </div>
+         <div class="col-md-4">
+         	<a href="jakobpapirov.se/resources#math" target="_blank" title="Specific"><img src="../graphics/Tweezers-32.png"></a>
+         </div>
+         <div col-md-4>
+            <a href="https://github.com/JakobPapirov/math" target="_blank">
+            	<img src="../graphics/GitHub-32.png" alt="GitHub" title="The repository!"></a>
+         </div>
+       </div>
+		</div> <!-- Resources used ends -->
 	</div> <!-- container ends -->
 </body>
 </html>

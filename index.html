@@ -10,7 +10,7 @@
 		<meta name="keywords" content="your,keywords,goes,here">
 		<meta name="author" content="Your Name">
 		<!-- Google fonts -->
-		
+
 		<!-- JQuery -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 		<!-- JavaScript -->
@@ -25,56 +25,71 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> <!-- Has to be loaded first, else overwritten -->
 			<!-- Main CSS -->
 		<link rel="stylesheet" href="css/main.css"> <!-- Find out if i should add a media tag for a separate css for mobile -->
-	<title>Mathematics roadmap</title>
-</head>
+		<title>Mathematics roadmap</title>
+	</head>
 <body id="top">
 	<div class="container"> <!-- Go to top of page -->
-		<nav class="navbar navbar-fixed-top navbar-inverse"> <!-- Main navigation; navbar, static -->
+		<nav class="navbar navbar-fixed-top navbar-inverse"> <!-- Main navigation; navbar, fixed -->
 			<div class="container-fluid">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
-      				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        				<span class="sr-only">Toggle navigation</span>
-        				<span class="icon-bar"></span> <!-- Dash one -->
-        				<span class="icon-bar"></span> <!-- Dash two -->
-        				<span class="icon-bar"></span> <!-- Dash three -->
-      				</button>
+      		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        		<span class="sr-only">Toggle navigation</span>
+        		<span class="icon-bar"></span> <!-- Dash one -->
+        		<span class="icon-bar"></span> <!-- Dash two -->
+        		<span class="icon-bar"></span> <!-- Dash three -->
+      		</button>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      				<ul class="nav navbar-nav navbar-right">
-      					<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Single variable calculus<span class="caret"></span></a>
-          					<ul class="dropdown-menu">
-								<li><a href="#coursera">Coursera</a></li>
+      		<ul class="nav navbar-nav navbar-right">
+      			<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Single variable calculus<span class="caret"></span></a>
+          		<ul class="dropdown-menu">
+          			<li><a href="#single-variable-calculus">Single variable calculus</a></li>
+          			<li role="separator" class="divider"></li>
+								<li><a href="#calc-coursera">Coursera</a></li>
 								<li role="separator" class="divider"></li>
-								<li><a href="#khan-academy">Khan Academy</a></li>
+								<li><a href="#calc-khan-academy">Khan Academy</a></li>
 								<li role="separator" class="divider"></li>
-								<li><a href="#youtube">Youtube</a></li>
+								<li><a href="#calc-youtube">Youtube</a></li>
 								<li role="separator" class="divider"></li>
-			 					<li><a href="#mit">MIT</a></li>
-          						<li role="separator" class="divider"></li>
-          					</ul>
-        				</li>
+			 					<li><a href="#calc-mit">MIT</a></li>
+          			<li role="separator" class="divider"></li>
+          		</ul>
+        		</li>
 						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Linear algebra<span class="caret"></span></a>
-          					<ul class="dropdown-menu">
-          						<li><a href="#">Placeholder</a></li>
-          					</ul>
-          				</li>
-          				<li><a href="#top">Go to top</a></li> <!-- Go to top of page -->
+          		<ul class="dropdown-menu">
+          			<li><a href="#linear-algebra">Linear Algebra</a></li>
+          			<li role="separator" class="divider"></li>
+          			<li><a href="#linalg-khan-academy">Khan Academy</a></li>
+          			<li role="separator" class="divider"></li>
+          		</ul>
+          	</li>
+          	<li><a href="#top">Go to top</a></li> <!-- Go to top of page -->
 					</ul>
 					<ul class="nav navbar-nav navbar-left">
-					    <li><a href="index.html"><img src="graphics/Home-32.png" alt="Go to homepage" title="Go to homepage"></a></li>
-                        <li><a href="single-variable-calculus/index.html">Single variable calculus: <br>Study notes</a></li>
-                        <li><a href="single-variable-calculus/examples.html">Single variable calculus: <br>Examples</a></li>
-                        <li><a href="linear-algebra/index.html">Linear algebra: <br>Study notes</a></li>
-                        <li><a href="linear-algebra/examples.html">Linear algebra: <br>Examples</a></li>
-					</ul>
+						<li><a href="index.html"><img src="graphics/Home-32.png" alt="Go to homepage" title="Go to homepage"></a></li>
+          	<li><a href="single-variable-calculus/index.html">Single variable calculus: <br>Study notes</a></li>
+         		<li><a href="single-variable-calculus/examples.html">Single variable calculus: <br>Examples</a></li>
+        	  <li><a href="linear-algebra/index.html">Linear algebra: <br>Study notes</a></li>
+        	  <li><a href="linear-algebra/examples.html">Linear algebra: <br>Examples</a></li>
+				<ul>
 				</div>
-				<ol class="breadcrumb">
-                    <li class="active">Math</li>
-                </ol>
 			</div>
-		</nav> <!-- Nav ends -->
+		</nav>  <!-- Main navigation; navbar, static ends -->
+		<div class="github-box"> <!-- GitHub box -->
+      <div class="github-circle"> <!-- GitHub circle -->
+        <div class="row">
+          <div class="col-md-6 github-repo">
+            <a href="https://github.com/JakobPapirov/math" target="_blank" title="The repository!">Hosted on</a>
+          </div>
+          <div class="col-md-6 github-site">
+            <a href="https://github.com/" target="_blank" title="GitHub <3">
+            <img class="github-img" src="graphics/GitHub-32.png" alt="GitHub" title="GitHub <3"></a>
+          </div>
+        </div>
+      </div> <!-- GitHub circle ends -->
+    </div> <!-- GitHub box ends -->
 		<div class="row"> <!-- Header -->
 			<div class="col-md-12"> <!-- Takes upp 100% row -->
 				<div class="page-title">
@@ -88,16 +103,28 @@
 				<hr> <!-- Horizontal rule -->
 			</div>
 		</div>
+		<div class="row"> <!-- breadcrumbs -->
+			<div class="col-md-12">
+				<ol class="breadcrumb">
+          <li class="active" title="You are here!">Math</li>
+        </ol>
+			</div>
+		</div> <!-- breadcrumbs ends -->
+		<div class="row"> <!-- Section divider -->
+			<div class="col-md-12">
+				<hr> <!-- Horizontal rule -->
+			</div>
+		</div>
 		<div class="row"> <!-- Summary progress -->
 			<h2 class="header-section">Summary of progress \o/</h2>
 			<div class="col-md-6"> <!-- Summary progress single variable calculus -->
-				<h2>Single variable calculus</h2>
+				<h2 class="header-section">Single variable calculus</h2>
 				<ul>
 					<li>Coursera</li>
 						<ul>
 							<li>Calculus 1</li>
 								<div class="progress">
-  									<div class="progress-bar progress-bar-success" role="progressbar"style="min-width: 2em; width: 31%">
+  									<div class="progress-bar progress-bar-success" role="progressbar" style="min-width: 2em; width: 31%">
   										31%
   										<!--19%-->
   										<!--63%-->
@@ -113,14 +140,14 @@
 									</div>
 								<li>Differentiation</li>
 									<div class="progress">
-										<div class="progress-bar progress-bar-success" role="progressbar" style="min-width: 2em; width: 43%">
-											43% <!--3/7-->
+										<div class="progress-bar progress-bar-success" role="progressbar" style="min-width: 2em; width: 71%">
+											71% <!-- 86 100 -->
 										</div>
 									</div>
 								<li>Antidifferentiation</li>
 									<div class="progress">
 										<div class="progress-bar progress-bar-success" role="progressbar" style="min-width: 2em; width: 0%">
-											0%<!--0/6-->
+											0%<!-- 17 33 50 67 83 100-->
 										</div>
 									</div>
 							</ul>
@@ -189,9 +216,9 @@
 				</ul>
 			</div> <!-- Summary progress single variable calculus ends -->
 			<div class="col-md-6"> <!-- Summary linear algebra -->
-				<h2>linear algebra</h2>
+				<h2 class="header-section">linear algebra</h2>
 				<ul>
-					<li>Placeholder</li>
+					<li>Khan Academy</li>
 				</ul>
 			</div> <!-- Summary linear algebra ends-->
 		</div> <!-- Summary/Progress ends-->
@@ -202,9 +229,10 @@
 		</div><!-- Section divider end -->
 		<div class="row"> <!-- Single variable calculus -->
 			<div class="col-md-12"> <!-- Takes up 100% of row-->
-				<h2 class="header-section" id="#single-variable-calculus">Single variable calculus</h2>
-					<h3 id="coursera"><a href="https://www.coursera.org" target="_blank" title="Coursera">Coursera</a><a href="#top"><button type="button" class="btn btn-info top">Top of page</button></a></h3>
-					<ul class="nav nav-tabs"> <!-- Navigation coursera single variable calculus--> 
+				<h2 class="header-section" id="single-variable-calculus">Single variable calculus</h2>
+					<h3 id="calc-coursera"><a href="https://www.coursera.org" target="_blank" title="Coursera website">Coursera</a><a href="#top">
+						<button type="button" class="btn btn-info top">Top of page</button></a></h3> <!-- COURSERA -->
+					<ul class="nav nav-tabs"> <!-- Navigation coursera --> 
   						<li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Calcluls 1<span class="caret"></span></a>
   							<ul class="dropdown-menu">
   								<li><a href="#Cour-Calc1-Lim">Limits and continuity</a></li>
@@ -212,79 +240,118 @@
   								<li><a href="#Cour-Calc1-Anti">Antidifferentiation</a></li>
   							</ul>
   						</li>
-  					</ul>
-						<h4><a href="https://www.coursera.org/learn/calculus1" target="_blank" title="Playlist">Calculus 1</a> | 17 hrs 20 mins</h4>
+  				</ul>
+						<h4><a href="https://www.coursera.org/learn/calculus1" target="_blank" title="Playlist">Course: Calculus 1</a> | 17 hrs 20 mins</h4>
 						<ul class="nav nav-tabs"> <!-- Navigation coursera single variable calculus--> 
-  							<li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Limits and continuity<span class="caret"></span></a>
-    							<ul class="dropdown-menu">
-    								<li><a href="#Cour-Calc1-Week1">Week 1 | Welcome to Calculus One
-    									<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!"></a></li>
-    								<li><a href="#Cour-Calc1-Week2">Week 2 | Functions and Limits
-    									<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!"></a></li>
-    								<li><a href="#Cour-Calc1-Week3">Week 3 | The End of Limits<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!"></a></li>
+  							<li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Part 1">Limits and continuity <span class="caret"></span></a>
+    							<ul class="dropdown-menu"> <!-- Part 1-->
+    								<li><a href="#Cour-Calc1-Week1"><span class="done">Week 1 | Welcome to Calculus One</span></li></a>
+    								<li><a href="#Cour-Calc1-Week2"><span class="done">Week 2 | Functions and Limits</li></a>
+    								<li><a href="#Cour-Calc1-Week3"><span class="done">Week 3 | The End of Limits</a></li>
     							</ul>
   							</li>
-  							<li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Differentiation<span class="caret"></span></a>
-  								<ul class="dropdown-menu">
-    								<li><a href="#Cour-Calc1-Week4">Week 4 | The Beginning of Derivatives
-    									<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!"></a></li>
-    								<li><a href="#Cour-Calc1-Week5">Week 5 | Techniques of Differentiation
-    									<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!"></a></li>
-    								<li><a href="#Cour-Calc1-Week6">Week 6 | Chain Rule
-    									<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!"></a></li>
-    								<li><a href="#Cour-Calc1-Week7">Week 7 | Derivatives of Transcendental (Trigonometric) Functions
-    									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">--></a></li>
-    								<li><a href="#Cour-Calc1-Week8">Week 8 | Derivatives in the Real World
-    									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">--></a></li>
-    								<li><a href="#Cour-Calc1-Week9">Week 9 | Optimization
-    									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">--></a></li>
-    								<li><a href="#Cour-Calc1-Week10">Week 10 | Linear Approximation
-    									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">--></a></li>
+  							<li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Part 2">Differentiation<span class="caret"></span></a>
+  								<ul class="dropdown-menu"> <!-- Part 2-->
+    								<li><a href="#Cour-Calc1-Week4"><span class="done">Week 4 | The Beginning of Derivatives</span></a></li>
+    								<li><a href="#Cour-Calc1-Week5"><span class="done">Week 5 | Techniques of Differentiation</span></a></li>
+    								<li><a href="#Cour-Calc1-Week6"><span class="done">Week 6 | Chain Rule</span></a></li>
+    								<li><a href="#Cour-Calc1-Week7"><span class="">Week 7 | Derivatives of Transcendental (Trigonometric) Functions</span></a></li>
+    								<li><a href="#Cour-Calc1-Week8"><span class="">Week 8 | Derivatives in the Real World</span></a></li>
+    								<li><a href="#Cour-Calc1-Week9"><span class="">Week 9 | Optimization</span></a></li>
+    								<li><a href="#Cour-Calc1-Week10"><span class="">Week 10 | Linear Approximation</span></a></li>
     							</ul>
     						</li>
-    					<li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Antidifferentiation<span class="caret"></span></a>
-  							<ul class="dropdown-menu">
-    							<li><a href="#Cour-Calc1-Week11">Week 11 | Antidifferentiation
-    								<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">--></a></li>
-    							<li><a href="#Cour-Calc1-Week12">Week 12 | Integration
-    								<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">--></a></li>
-    							<li><a href="#Cour-Calc1-Week13">Week 13 | Fundamental Theorem of Calculus
-    								<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">--></a></li>
-    							<li><a href="#Cour-Calc1-Week14">Week 14 | Substitution Rule
-    								<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">--></a></li>
-    							<li><a href="#Cour-Calc1-Week15">Week 15 | Techniques of Integration
-    								<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">--></a></li>
-    							<li><a href="#Cour-Calc1-Week16">Week 16 | Applications of Integration
-    								<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">--></a></li>
+    					<li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Part 3">Antidifferentiation
+                                <span class="caret"></span></a>
+  							<ul class="dropdown-menu"> <!-- Part 3-->
+    							<li><a href="#Cour-Calc1-Week11"><span class="">Week 11 | Antidifferentiation</span></a></li>
+    							<li><a href="#Cour-Calc1-Week12"><span class="">Week 12 | Integration</span></a></li>
+    							<li><a href="#Cour-Calc1-Week13"><span class="">Week 13 | Fundamental Theorem of Calculus</span></a></li>
+    							<li><a href="#Cour-Calc1-Week14"><span class="">Week 14 | Substitution Rule</span></a></li>
+    							<li><a href="#Cour-Calc1-Week15"><span class="">Week 15 | Techniques of Integration</span></a></li>
+    							<li><a href="#Cour-Calc1-Week16"><span class="">Week 16 | Applications of Integration</span></a></li>
     						</ul>
     					</li>
 					</ul>
-							<h5 id="Cour-Calc1-Lim">Limits and continuity | hours
+							<h5 id="Cour-Calc1-Lim">Limits and continuity | 3:10 hours
 								<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 								<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
 								</h5> <!-- Limits and continuity -->
-								<ol>
+								<!--<br>  Perhaps a hack.. probably due to lack of a <p> -->
+								<div class="btn-group btn-group-justified" role="group" aria-label="...">
+									<div class="btn-group" role="group">
+										<button class="btn btn-default btn-primary" type="button" class="btn " title="Lessons">Week 1 <span class="badge">1</span></button>
+  								</div>
+  								<div class="btn-group" role="group">
+										<button class="btn btn-default btn-primary" type="button" class="btn btn-default" title="Lessons">Week 2 <span class="badge">6</span></button>
+  								</div>
+  								<div class="btn-group" role="group">
+										<button class="btn btn-default btn-primary" type="button" class="btn btn-default" title="Lessons">Week 3 <span class="badge">5</span></button>
+  								</div>
+								</div>
+								<ol class="list-separation"> <!-- Calculus 1 Part 1 -->
 									<li id="Cour-Calc1-Week1"><a href="https://www.coursera.org/learn/calculus1/home/week/1" target="_blank" title="Week 1 | 4 tasks">Welcome to Calculus One</a> | 23 mins
 										<a href="#coursera" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
-										<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
+										<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!"></li>
 										<p>Welcome to Calculus! Join me on this journey through one of the great triumphs of human thought</p>
-										</li>
+										<div class="btn-group btn-group-justified" role="group" aria-label="...">
+											<div class="btn-group" role="group">
+										<button class="btn btn-default btn-primary" type="button" title="Videos">Lesson 1 <span class="badge">1</span></button>
+  								</div>
+										</div>
 									<li id="CourCalc1Week2"><a href="https://www.coursera.org/learn/calculus1/home/week/2" target="_blank">Functions and Limits</a> | 104 mins
 										<a href="#coursera" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
-										<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
+										<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!"></li>
 										<p>Functions are the main star of our journey. Calculus isn't numbers: it's relationships between things, and how one thing changing affects something else.</p>
-										</li>
+										<img src="graphics/Infinity Large-32.png">
+										<div class="btn-group btn-group-justified" role="group" aria-label="...">
+											<div class="btn-group" role="group">
+												<button class="btn btn-default btn-primary" type="button" title="Videos">Lesson 1 <span class="badge">1</span></button>
+  										</div>
+  										<div class="btn-group" role="group">
+    										<button class="btn btn-default btn-primary" type="button" title="Videos">Lesson 2 <span class="badge">3</span></button>
+  										</div>
+  										<div class="btn-group" role="group">
+  											<button class="btn btn-default btn-primary" type="button" type="button" title="Videos">Lesson 3 <span class="badge">2</span></button>
+  										</div>
+  										<div class="btn-group" role="group">
+  											<button class="btn btn-default btn-primary" type="button" title="Videos">Lesson 4 <span class="badge">4</span></button>
+  										</div>
+  										<div class="btn-group" role="group">
+  											<button class="btn btn-default btn-primary" type="button" title="Videos">Lesson 5 <span class="badge">2</span></button>
+  										</div>
+  										<div class="btn-group" role="group">
+  											<button class="btn btn-default btn-primary" type="button" title="Videos">Lesson 6 <span class="badge">1</span></button>
+  										</div>
+  									</div>
 									<li id="CourCalc1Week3"><a href="https://www.coursera.org/learn/calculus1/home/week/3" target="_blank">The End of Limits</a> | 63 mins
 										<a href="#coursera" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
-										<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
+										<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!"></li>
 										<p>People have thought about infinity for thousands of years; limits provide one way to make such ponderings precise. Continuity makes precise the idea that small changes in the input don't affect the output much.</p>
-										</li>
+										<div class="btn-group btn-group-justified" role="group" aria-label="...">
+											<div class="btn-group" role="group">
+												<button class="btn btn-default btn-primary" type="button" title="Videos">Lesson 1 <span class="badge">1</span></button>
+  										</div>
+  										<div class="btn-group" role="group">
+    										<button class="btn btn-default btn-primary" type="button" title="Videos">Lesson 2 <span class="badge">4</span></button>
+  										</div>
+  										<div class="btn-group" role="group">
+  											<button class="btn btn-default btn-primary" type="button" title="Videos">Lesson 3 <span class="badge">4</span></button>
+  										</div>
+  										<div class="btn-group" role="group">
+  											<button class="btn btn-default btn-primary" type="button" title="Videos">Lesson 4 <span class="badge">3</span></button>
+  										</div>
+  										<div class="btn-group" role="group">
+  											<button class="btn btn-default btn-primary" type="button" title="Videos">Lesson 5 <span class="badge">3</span></button>
+  										</div>
+										</div>
 								</ol>
-							<h5 id="Cour-Calc1-Diff">Differentiation | hours
+							<h5 id="Cour-Calc1-Diff">Differentiation | 8:16 hours
 								<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 								<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 								</h5> <!-- Differentiation -->
-								<ol>
+								<br> <!-- Perhaps a hack.. probably due to lack of a <p> -->
+								<ol class="list-separation"> <!-- Calculus 1 Part 2 -->
 									<li id="CourCalc1Week4"><a href="https://www.coursera.org/learn/calculus1/home/week/4" target="_blank">The Beginning of Derivatives</a> | 62 mins
 										<a href="#coursera" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 										<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
@@ -302,7 +369,7 @@
 										</li>
 									<li id="CourCalc1Week7"><a href="https://www.coursera.org/learn/calculus1/home/week/7" target="_blank">Derivatives of Transcendental (Trigonometric) Functions</a> | 67 mins
 										<a href="#coursera" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
-										<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
+										<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
 										<p>So far, we can differentiate polynomials, exponential functions, and logarithms. Let's learn how to differentiate trigonometric functions.</p>
 										</li>
 									<li id="CourCalc1Week8"><a href="https://www.coursera.org/learn/calculus1/home/week/8" target="_blank">Derivatives in the Real World</a> | 61 mins
@@ -321,11 +388,12 @@
 										<p>Replacing the curved graph by a straight line approximation helps us to estimate values and roots.</p>
 										</li>
 								</ol>
-							<h5 id="Cour-Calc1-Anti">Antidifferentiation | hours 
+							<h5 id="Cour-Calc1-Anti">Antidifferentiation | 5:54 hours 
 								<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 								<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 								</h5> <!-- Antidifferntiation -->
-								<ol>
+								<br> <!-- Perhaps a hack.. probably due to lack of a <p> -->
+								<ol class="list-separation"> <!-- Calculus 1 Part 3 -->
 									<li id="Cour-Calc1-Week11"><a href="https://www.coursera.org/learn/calculus1/home/week/11" target="_blank">Antidifferentiation</a> | 57 mins
 										<a href="#coursera" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 										<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
@@ -357,27 +425,28 @@
 										<p>We have already used integrals to compute area; integration can also be used to compute volumes. </p>
 										</li>
 								</ol> <!-- Calculus 1 ends -->
-					<h3 id="khan-academy"><a href="https://www.khanacademy.org" target="_blank">Khan Academy</a><a href="#top"><button type="button" class="btn btn-info top">Top of page</button></a></h3>
+					<h3 id="calc-khan-academy"><a href="https://www.khanacademy.org" target="_blank" title="Khan Academy website">Khan Academy</a><a href="#top"><button type="button" class="btn btn-info top">Top of page</button></a></h3> <!-- Khan Academy -->
 					<ul class="nav nav-tabs"> <!-- Navigation KA differential calculus -->
 						<li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Differential calculus<span class="caret"></span></a>
-    						<ul class="dropdown-menu">
-      							<li><a href="#KADiffCalcLimits">Limits</a></li>
-								<li><a href="#KADiffCalcDer">Taking derivatives</a></li>
-								<li><a href="#KADiffCalcDerApp">Derivative applicataions</a></li>
+    						<ul class="dropdown-menu"> <!-- Course 1 -->
+      						<li><a href="#KADiffCalcLimits">Limits</a></li>
+									<li><a href="#KADiffCalcDer">Taking derivatives</a></li>
+									<li><a href="#KADiffCalcDerApp">Derivative applicataions</a></li>
     						</ul>
   						</li>
   						<li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Placeholder<span class="caret"></span></a>
-    						<ul class="dropdown-menu">
+    						<ul class="dropdown-menu"> <!-- Course 2 -->
       							<li><a href="#">Placeholder</a></li>
 								<li><a href="#">Placeholder</a></li>
 								<li><a href="#">Placeholder</a></li>
     						</ul>
   						</li>
 					</ul> <!-- Navigation KA differential calculus ends-->
-						<h4><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus" target="_blank" title="Playlist">Differential calculus</a> |  hours</h4>
+						<h4><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus" target="_blank" title="Playlist">Course: Differential calculus</a> |  hours</h4>
 					<ul class="nav nav-tabs"> <!-- INTRA Navigation KA differential calculus -->
-						<li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Limits<span class="caret"></span></a>
-							<ul class="dropdown-menu">
+						<li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Part 1">Limits
+						      <span class="caret"></span></a>
+							<ul class="dropdown-menu"> <!-- Part 1 -->
 								<li><a href="#KA-DiffCalc-Lim1">Limits</a></li>
 								<li><a href="#KA-DiffCalc-Lim2">Estimating limits from graphs</a></li>
 								<li><a href="#KA-DiffCalc-Lim3">Finding limits algebraically</a></li>
@@ -387,8 +456,9 @@
 								<li><a href="#KA-DiffCalc-Lim7">Epsilon delta definition of limits</a></li>
 							</ul>
 						</li>
-						<li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Taking derivatives<span class="caret"></span></a>
-							<ul class="dropdown-menu">
+						<li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Part 2">Taking derivatives
+						      <span class="caret"></span></a>
+							<ul class="dropdown-menu"> <!-- Part 2 -->
 								<li><a href="#KA-DiffCalc-Der1">Introduction to differential calculus</a></li>
 								<li><a href="#KA-DiffCalc-Der2">Using secant line slopes to approximate</a></li>
 								<li><a href="#KA-DiffCalc-Der3">Introduction to derivatives</a></li>
@@ -403,8 +473,9 @@
 								<li><a href="#KA-DiffCalc-Der12">Proofs of derivatives of common functions</a></li>
 							</ul>
 						</li>
-						<li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Derivative applications<span class="caret"></span></a>
-							<ul class="dropdown-menu">
+						<li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" title="Part 3">Derivative applications
+						      <span class="caret"></span></a>
+							<ul class="dropdown-menu"> <!-- Part 3 -->
 								<li><a href="#KA-DiffCalc-DerApp1">Equations of normal and tangent lines</a></li>
 								<li><a href="#KA-DiffCalc-DerApp2">Motion along a line</a></li>
 								<li><a href="#KA-DiffCalc-DerApp3">Critical points and graphing with calculus</a></li>
@@ -424,39 +495,45 @@
 							<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a><img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
 							</h5>
 							<p>Limit introduction, squeeze theorem, and epsilon-delta definition of limits</p>
-							<ol>
+							<ol class="list-separation"> <!-- Part 1 -->
 								<li id="KA-DiffCalc-Lim1"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/limits-topic/limits-tutorial" target="_blank" title="3 vidoes | new tab">Limits</a> | 17:34 mins
 									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
 									<p>Much of calculus deals with the idea of infinity. You will commonly hear people speaking about something "infinitely small", for example. Limits are the tool underlying all calculus which let us talk sensibly about infinity. In particular, they give us the language to talk about being "infinitely close" to some number by considering what happens as you approach that number. </p>
 									</li>
 								<li id="KA-DiffCalc-Lim2"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/limits-topic/calculus-estimating-limits-graph" target="_blank" title="4 vidoes | new tab">Estimating limits from graphs</a> | 23:30 mins
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
 									<p>In this tutorial, we will build our ability to visualize limits by estimating them based on graphs of functions. We will look at both one-sided and two-sided limits.</p>
 									</li>
 								<li id="KA-DiffCalc-Lim3"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/limits-topic/algebraic-limits" target="_blank" title="3 vidoes | new tab">Finding limits algebraically</a> | 14:46 mins
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
 									<p>We often attempt to find the limit at a point where the function itself is not defined. In this tutorial, we will use algebra to "simplify" functions into ones where it is defined. Given that the original function and the simplified one may be identical except for the limit point in question, this is a useful way of finding limits. </p>
 									</li>
 								<li id="KA-DiffCalc-Lim4"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/limits-topic/continuity-limits" target="_blank" title="4 vidoes | new tab">Continuity using limits</a> | 25:32 mins
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
 									<p>A function isn't continuous when there is a "break" in its graph. This tutorial uses limits to define this idea more formally and gives practice thinking about continuity (and discontinuity) in terms of limits.</p>
 									</li>
 								<li id="KA-DiffCalc-Lim5"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/limits-topic/limits-infinity" target="_blank" title="7 vidoes | new tab">Limits and infinity</a> | 35:42 mins
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
 									<p>You have a basic understanding of what a limit is. Now, in this tutorial, we can explore situation where we take the limit as x approaches negative or positive infinity (and situations where the limit itself could be unbounded).</p>
 									</li>
 								<li id="KA-DiffCalc-Lim6"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/limits-topic/squeeze-theorem" target="_blank" title="4 vidoes | new tab">Squeeze theorem</a> | 36:47 mins
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
 									<p>If a function is always smaller than one function and always greater than another (i.e. it is always between them), then if the upper and lower function converge to a limit at a point, then so does the one in between. Not only is this useful for proving certain tricky limits (we use it to prove lim (x → 0) of (sin x)/x, but it is a useful metaphor to use in life (seriously). :) This tutorial is useful but optional. It is covered in most calculus courses, but it is not necessary to progress on to the "Introduction to derivatives" tutorial.</p>
 									</li>
 								<li id="KA-DiffCalc-Lim7"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/limits-topic/epsilon-delta" target="_blank" title="4 vidoes | new tab">Epsilon delta definition of limits</a>
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a> | 24:41 mins
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a> | 24:41 mins
 									<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
 									<p>This tutorial introduces a "formal" definition of limits. So put on your ball gown and/or tuxedo to party with Mr. Epsilon Delta (no, this is not referring to a fraternity). This tends to be covered early in a traditional calculus class (right after basic limits), but we have mixed feelings about that. It is cool and rigorous, but also very "mathy" (as most rigorous things are). Don't fret if you have trouble with it the first time. If you have a basic conceptual understanding of what limits are (from the "Limits" tutorial), you're ready to start thinking about taking derivatives.</p>
 								</li>
@@ -466,64 +543,76 @@
 							<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 							</h5>
 							<p>Calculating derivatives. Power rule. Product and quotient rules. Chain Rule. Implicit differentiation. Derivatives of common functions.</p>
-							<ol>
+							<ol class="list-separation"> <!-- Part 2 -->
 								<li id="KA-DiffCalc-Der1"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/taking-derivatives/intro-differential-calc" target="_blank" title="1 vidoes | new tab">Introduction to differential calculus</a> | 9:06 mins
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
 									<p>The topic that is now known as "calculus" was really called "the calculus of differentials" when first devised by Newton (and Leibniz) roughly four hundred years ago. To Newton, differentials were infinitely small "changes" in numbers that previous mathematics didn't know what to do with. Think this has no relevence to you? Well how would you figure out how fast something is going *right* at this moment (you'd have to figure out the very, very small change in distance over an infinitely small change in time)? This tutorial gives a gentle introduction to the world of Newton and Leibniz.</p>
 									</li>
 								<li id="KA-DiffCalc-Der2"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/taking-derivatives/secant-line-slope-tangent" target="_blank" title="6 vidoes | new tab">Using secant line slopes to approximate</a> | 36:06 mins
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 									<p>The idea of slope is fairly straightforward-- (change in vertical) over (change in horizontal). But how do we measure this if the (change in horizontal) is zero (which would be the case when finding the slope of the tangent line. In this tutorial, we'll approximate this by finding the slopes of secant lines.</p>
 									</li>
 								<li id="KA-DiffCalc-Der3"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/taking-derivatives/derivative-intro" target="_blank" title="9 vidoes | new tab">Introduction to derivatives</a> | 1:06:19 hours
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 									<p>Discover what magic we can derive when we take a derivative, which is the slope of the tangent line at any point on a curve.</p>
 									</li>
 								<li id="KA-DiffCalc-Der4"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/taking-derivatives/visualizing-derivatives-tutorial" target="_blank" title="8 vidoes | new tab">Visualizing graphs of functions and their derivatives</a> | 38:38 mins
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 									<p>You understand that a derivative can be viewed as the slope of the tangent line at a point or the instantaneous rate of change of a function with respect to x. This tutorial will deepen your ability to visualize and conceptualize derivatives through videos and exercises. We think you'll find this tutorial incredibly fun and satisfying (seriously).</p>
 									</li>
 								<li id="KA-DiffCalc-Der5"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/taking-derivatives/power-rule-tutorial" target="_blank" title="6 vidoes | new tab">Power rule</a> | 41:29 mins
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 									<p>Calculus is about to seem strangely straight forward. You've spent some time using the definition of a derivative to find the slope at a point. In this tutorial, we'll derive and apply the derivative for any term in a polynomial. By the end of this tutorial, you'll have the power to take the derivative of any polynomial like it's second nature!</p>
 									</li>
 								<li id="KA-DiffCalc-Der6"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/taking-derivatives/derivatives-of-common-functions" target="_blank" title="1 vidoes | new tab">Derivatives of common functions</a> | 3:43 mins
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 									<p>For your derivative-taking-toolbelt, it's good to know the derivative of several common functions such as sin(x), tan(x), e^x, etc. </p>
 									</li>
 								<li id="KA-DiffCalc-Der7"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/taking-derivatives/chain-rule" target="_blank" title="9 vidoes | new tab">Chain rule</a> | 1:02:38 hours
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 									<p>If you know the derivatives of f(x) and g(x), the chain rule gives you the power to find the derivative of f(g(x)) or g(f(x)). Believe me, this is no small power. Most complex and hairy functions can be thought of the composition of several simpler ones (ones that you can find derivatives of), so after this tutorial, you'll be able to take the derivative of almost any function.</p>
 									</li>
 								<li id="KA-DiffCalc-Der8"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/taking-derivatives/proving-the-chain-rule" target="_blank" title="3 vidoes | new tab">Proving the chain rule</a> | 23:42 mins
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 									<p>We've already been using the chain rule, but let's take a moment to really convince ourselves that it'll always work. It's not necessary to watch these videos before moving on, but if you have the time, they'll help to deepen your understanding of derivatives, continuity, and the chain rule.</p>
 									</li>
 								<li id="KA-DiffCalc-Der9"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/taking-derivatives/product-rule" target="_blank" title="6 vidoes | new tab">Product and quotient rules</a> | 30:25 mins
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 									<p>If you know the derivative of two functions f(x) and g(x), can you find the derivative of f(x)g(x)? What about f(x)/g(x)? Well, you this is exactly what you'll be able to do after this tutorial.</p>
 									</li>
 								<li id="KA-DiffCalc-Der10"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/taking-derivatives/implicit-differentiation" target="_blank" title="7 vidoes | new tab">Implicit differentiation</a> | 43:21 mins
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 									<p>Some curves, like the circle "x^2+y^2 = 1", are not defined as the graph of some function, as in "y = f(x)". After all, mathematical relations, like people, are not always explicit about their intentions. Here we learn how to find the slopes of these implicitly defined curves.</p>
 									</li>
 								<li id="KA-DiffCalc-Der11"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/taking-derivatives/derivatives-inverse-functions" target="_blank" title="6 vidoes | new tab">Derivatives of inverse functions</a> | 32:48 mins
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 									<p>In this tutorial we explore a common method to find the derivatives of inverse tangent (arctangent), inverse sine (arcsine), inverse cosine (arccosine) and the natural logarithm function.</p>
 									</li>
 								<li id="KA-DiffCalc-Der12"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/taking-derivatives/der-common-functions" target="_blank" title="6 vidoes | new tab">Proofs of derivatives of common functions</a> | 26:56 mins
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 									<p>We told you about the derivatives of many functions, but you might want proof that what we told you is actually true. That's what this tutorial tries to do!</p>	
 									</li>
@@ -533,71 +622,83 @@
 							<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 							</h5>
 							<p>The reason we study calculus, and the reason it was invented, is for its many uses in real-world problems. In particular, derivatives let us optimize functions and study their rates of change. Here we cover optimization, rates of change, L'Hopital's rule, the mean value theorem, and more!</p>
-							<ol>
+							<ol class="list-separation"> <!-- Part 3 -->
 								<li id="KA-DiffCalc-DerApp1"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/derivative-applications/normal-tangent-line-eq" target="_blank">Equations of normal and tangent lines</a> |  mins
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 									<p>A derivative at a point in a curve can be viewed as the slope of the line tangent to that curve at that point. Given this, the natural next question is what the equation of that tangent line is. In this tutorial, we'll not only find equations of tangent lines, but normal ones as well.</p>
 									</li>
 								<li id="KA-DiffCalc-DerApp2"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/derivative-applications/motion-along-line-derivatives" target="_blank">Motion along a line</a> |  mins
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 									<p>Derivatives can be used to calculate instantaneous rates of change. The rate of change of position with respect to time is velocity and the rate of change of velocity with respect to time is acceleration. Using these ideas, we'll be able to analyze one-dimensional particle movement given position as a function of time.</p>
 									</li>
 								<li id="KA-DiffCalc-DerApp3"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/derivative-applications/critical-points-graphing" target="_blank">Critical points and graphing with calculus</a> |  mins
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 									<p>One of the reasons calculus was invented was to be able to optimize functions. When you have some function modeling a real world situation, you often want to find its maximum or minimum. In this tutorial, you will see how information about the derivative of a function can give powerful ways to mathematically describe the "shape" of a function.</p>
 									</li>
 								<li id="KA-DiffCalc-DerApp4"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/derivative-applications/absolute-relative-maxima-minima" target="_blank">Absolute and relative maxima and minima</a> |  mins
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 									<p>When you're looking for the maximum or minimum of a function, a good way to start is by finding points where the derivative equals zero. However, you won't always get the maximum possible value of the function; you might just end up with a point which is maximum *relative* to those points around it. In this tutorial, you will learn about the extreme value theorem, and what it tells us about relative maxima and minima. </p>
 									</li>
 								<li id="KA-DiffCalc-DerApp5"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/derivative-applications/concavity-inflection-points" target="_blank">Concavity and inflection points</a> |  mins
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 									<p>One of the neat things about calculus is that it gives us a mathematical way to describe the shape of curves. In this tutorial, you will learn about concavity and inflection points, which describe quantitatively how a curve curves. This will be useful for finding maxima and minima.</p>
 									</li>
 								<li id="KA-DiffCalc-DerApp6"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/derivative-applications/calc-optimization" target="_blank">Optimization with calculus</a> |  mins
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 									<p>Choosing which topic in calculus is the most useful is like asking a parent to choose their favorite child. What you're supposed to say is that there isn't one. That said, between you and me, optimization is quite possible the most important topic from calculus that you should remember.</p>
 									</li>
 								<li id="KA-DiffCalc-DerApp7"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/derivative-applications/differentiation-application" target="_blank">Applying differentiation in different fields</a> |  mins
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 									<p>So, you've probably been told that calculus is useful, but this fact can be hard to believe and remember when you're deep in the weeds of a particularly nasty derivative. In this tutorial, we begin to just scratch the surface as we apply derivatives in fields as disperse as biology and economics.</p>
 									</li>
 								<li id="KA-DiffCalc-DerApp8"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/derivative-applications/rates-of-change" target="_blank">Related rates</a> |  mins
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 									<p>Have you ever wondered how fast the area of a ripple of a pond is increasing based on how fast the ripple is? What about how fast a volcano's volume is increasing? This tutorial on related rates will satiate your curiosity and then some! Solving related rates problems using calculus</p>
 									</li>
 								<li id="KA-DiffCalc-DerApp9"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/derivative-applications/mean-value-theorem" target="_blank">Mean value theorem</a> |  mins
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 									<p>If over the last hour on the highway, you averaged 60 miles per hour, then you must have been going exactly 60 miles per hour at some point. This is the gist of the mean value theorem (which generalizes the idea for any continuous, differentiable function).</p>
 									</li>
 								<li id="KA-DiffCalc-DerApp10"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/derivative-applications/lhopital-rule" target="_blank">L'Hôpital's rule</a> |  mins
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 									<p>Limits have done their part helping to find derivatives. Now, under the guidance of l'Hôpital's rule, derivatives are looking to show their gratitude by helping to find limits. Ever try to evaluate a function at a point and get 0/0 or infinity/infinity? Well, that's a big clue that l'Hopital's rule can help you find the limit of the function at that point.</p>
 									</li>
 								<li id="KA-DiffCalc-DerApp11"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/derivative-applications/local-linearization" target="_blank">Local linearization</a> |  mins
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 									<p>Let's see how we can local linearization can be used to approximate values of functions near values that we know</p>
 									</li>
 								<li id="KA-DiffCalc-DerApp12"><a href="https://www.khanacademy.org/math/calculus-home/differential-calculus/derivative-applications/tangent-to-polar-curve" target="_blank">Tangents to polar curves</a> |  mins
-									<a href="#khan-academy" class="completed" title="Top of course"><span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<a href="#khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
 									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
 									<p>Here you have the chance to practice thinking about tangent lines when curves are defined in polar coordinates.</p>
 									</li>
 							</ol>
-					<h3 id="youtube"><a href="https://www.youtube.com" target="_blank">Youtube</a><a href="#top"><button type="button" class="btn btn-info top">Top of page</button></a></h3>
-							<h4><a href="https://www.youtube.com/user/UCLACourses" target="_blank">UCLA</a></h4>
-								<ol>
+					<h3 id="calc-youtube"><a href="https://www.youtube.com" target="_blank" title="Youtube">Youtube</a><a href="#top"><button type="button" class="btn btn-info top">Top of page</button></a></h3>
+							<h4><a href="https://www.youtube.com/user/UCLACourses" target="_blank" title="Playlist">UCLA</a></h4>
+								<ol class="list-separation">
 									<li><a href="" target="_blank"></a></li>
 									<li><a href="" target="_blank"></a></li>
 									<li><a href="" target="_blank"></a></li>
@@ -609,8 +710,8 @@
 									<li><a href="" target="_blank"></a></li>
 									<li><a href="" target="_blank"></a></li>
 								</ol>
-							<h4><a href="https://www.youtube.com/channel/UC_zdcJ90AsNsG71ovz9NCUw/videos" target="_blank">slcmath@pc</a></h4>
-								<ol>
+							<h4><a href="https://www.youtube.com/channel/UC_zdcJ90AsNsG71ovz9NCUw/videos" target="_blank" title="Playlist">slcmath@pc</a></h4>
+								<ol class="list-separation">
 									<li><a href="" target="_blank"></a></li>
 									<li><a href="" target="_blank"></a></li>
 									<li><a href="" target="_blank"></a></li>
@@ -622,7 +723,7 @@
 									<li><a href="" target="_blank"></a></li>
 									<li><a href="" target="_blank"></a></li>
 								</ol>
-					<h3 id="mit"><a href="http://ocw.mit.edu/courses/mathematics" target="_blank">MIT | Open courseware</a><a href="#top"><button type="button" class="btn btn-info top">Top of page</button></a></h3>
+					<h3 id="calc-mit"><a href="http://ocw.mit.edu/courses/mathematics" target="_blank" title="MIT website">MIT | Open courseware</a><a href="#top"><button type="button" class="btn btn-info top">Top of page</button></a></h3>
 							<h4><a href="http://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/" target="_blank">Single variable calculus</a></h4>
 			</div> <!-- Single variable calculus col ends -->
 		</div> <!-- Single variable calculus row ends -->
@@ -633,9 +734,84 @@
 		</div><!-- Section divider end -->
 		<div class="row"> <!-- Linear algebra -->
 			<div class="col-md-12"> <!-- Takes up 100% of row -->
-				<h2 class="header-section" id="#linear-algebra">Linear algebra</h2>
-					<h4>rubrik4</h4>
-						
+				<h2 class="header-section" id="linear-algebra">Linear algebra</h2>
+					<h3 id="linalg-khan-academy"><a href="https://www.khanacademy.org" target="_blank" title="Khan Academy website">Khan Academy</a><a href="#top"><button type="button" class="btn btn-info top">Top of page</button></a></h3> <!-- Khan Academy -->
+					<ul class="nav nav-tabs"> <!-- Navigation KA differential calculus -->
+						<li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Essence of linear algebra<span class="caret"></span></a>
+    						<ul class="dropdown-menu"> <!-- Course 1 -->
+      						<li><a href="#KA-EOLA">Essence of linear algebra</a></li>
+    						</ul>
+  						</li>
+  						<li role="presentation" class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Placeholder<span class="caret"></span></a>
+    						<ul class="dropdown-menu"> <!-- Course 2 -->
+      						<li><a href="#">Placeholder</a></li>
+									<li><a href="#">Placeholder</a></li>
+									<li><a href="#">Placeholder</a></li>
+    						</ul>
+  						</li>
+					</ul> <!-- Navigation KA differential calculus ends-->
+						<h4 id="KA-EOLA"><a href="https://www.khanacademy.org/math/linear-algebra/eola-topic" target="_blank" title="Playlist">Course: Essence of linear algebra</a></h4>
+							<ol>
+								<li id="KA-EOLA-1"><a href="https://www.khanacademy.org/math/linear-algebra/eola-topic/eola/v/eola-preview" target="_blank">Essence of linear algebra preview</a> |  mins
+									<a href="#linalg-khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
+								</li>
+									<p></p>
+								<li id="KA-EOLA-2"><a href="https://www.khanacademy.org/math/linear-algebra/eola-topic/eola/v/eola-chapter-1" target="_blank">Vectors, what even are they?</a> |  mins
+									<a href="#linalg-khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
+								</li>
+									<p></p>
+								<li id="KA-EOLA-3"><a href="https://www.khanacademy.org/math/linear-algebra/eola-topic/eola/v/eola-chapter-2" target="_blank">Linear combinations, span and bases</a> |  mins
+									<a href="#linalg-khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
+								</li>
+									<p></p>
+								<li id="KA-EOLA-4"><a href="https://www.khanacademy.org/math/linear-algebra/eola-topic/eola/v/eola-chapter-3" target="_blank">Linear transformations and matrices</a> |  mins
+									<a href="#linalg-khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
+								</li>
+									<p></p>
+								<li id="KA-EOLA-5><a href="https://www.khanacademy.org/math/linear-algebra/eola-topic/eola/v/eola-chapter-4" target="_blank">Matrix multiplication as composition</a> |  mins
+									<a href="#linalg-khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
+								</li>
+									<p></p>
+								<li id="KA-EOLA-6"><a href="https://www.khanacademy.org/math/linear-algebra/eola-topic/eola/v/eola-footnote" target="_blank">Footnote: Three-dimensional linear transformations</a> |  mins
+									<a href="#linalg-khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
+								</li>
+									<p></p>
+								<li id="KA-EOLA-7"><a href="https://www.khanacademy.org/math/linear-algebra/eola-topic/eola/v/eola-chapter-5" target="_blank">The determinant</a> |  mins
+									<a href="#linalg-khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
+								</li>
+									<p></p>
+								<li id="KA-EOLA-8"><a href="https://www.khanacademy.org/math/linear-algebra/eola-topic/eola/v/eola-chapter-6" target="_blank">Inverse matrices, column space and null space</a> |  mins
+									<a href="#linalg-khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">
+								</li>
+									<p></p>
+								<li id="KA-EOLA-9"><a href="https://www.khanacademy.org/math/linear-algebra/eola-topic/eola/v/eola-footnote2" target="_blank">Footnote: Non-square matrices as transformations between dimensions</a> |  mins
+									<a href="#linalg-khan-academy" class="completed" title="Top of course">
+									<span class="glyphicon glyphicon glyphicon-chevron-up"></span></a>
+									<!--<img class="completed" src="graphics/accept.png" alt="Completed!" title="Completed!">-->
+									</li>
+										<p></p>
+							</ol>
+						<h4><a href="" target="_blank" title="Playlist"></a></h4>
+
+					<h3 id="linalg-youtube"><a href="https://www.youtube.com" target="_blank" title="Youtube">Youtube</a><a href="#top"><button type="button" class="btn btn-info top">Top of page</button></a></h3>
+
+						<h4><a href="" target="_blank" title="Playlist"></a></h4>
 			</div>
 		</div> <!-- Linear algebra ends -->
 		<div class="row"> <!-- Section divider -->
@@ -643,43 +819,33 @@
 				<hr> <!-- Horizontal rule -->
 			</div>
 		</div><!-- Section divider end -->
-		<div class="row"> <!-- Footer -->
-			<div class="col-md-12">
-				<p class="header-section">Written by Jakob Papirov, Uppsala, Sweden 2016</p>
-			</div>
-		</div> <!-- Footer ends -->
+		<footer> <!-- Footer -->
+			<p>Written by Jakob Papirov, Uppsala, Sweden 2016</p>
+		</footer> <!-- Footer ends -->
 		<div class="row"> <!-- Section divider -->
 			<div class="col-md-12">
 				<hr> <!-- Horizontal rule -->
 			</div>
 		</div><!-- Section divider end -->
-		<div class="row"> <!-- Resources used -->
-			<div class="col-md-12">
-				<h5 class="header-section">Resources used</h5>
-			</div>
+		<div class="row resources"> <!-- Resources used -->
 			<div class="row">
-			    <div class="col-md-4">
-			         <h6>Design</h6>
-                        <a href="https://getbootstrap.com" target="_blank" title="Go to bootstrap website | new tab">Bootstrap</a> (incl.  
-                        <a href="https://getbootstrap.com/components/#glyphicons" target="_blank" title="Go to Bootstrap: glyphicons | new tab">glyphicons</a>)
-			    </div>
-			    <div class="col-md-4">
-			        <h6>Icons</h6>
-                        <a href="http://www.famfamfam.com/lab/icons/silk/" target="_blank" title="Go to famfamfam icons | new tab">famfamfam</a>, 
-                        <a href="https://icons8.com/" target="_blank" title="Go to icons8">icons8</a>
-			    </div>
-			    <div class="col-md-4">
-			        <h6>Math</h6>
-                        <a href="www.firemath.info" target="_blank" title="Go to firemath | new tab">Firemath: Firefox extention</a> in conjunction with 
-                        <a href="https://www.mathjax.org/" target="_blank" title="Go to mathjax website | new tab">Mathjax</a>
-			    </div>
-			</div>
+        <div class="col-md-12">
+          <h5 class="">Resources used</h5>
+        </div>
+      </div>
+      <div class="row">
+      	<div class="col-md-4">
+          <a href="jakobpapirov.se/resources#main" target="_blank" title="General"><img src="graphics/Book Stack-32.png"></a>
+         </div>
+         <div class="col-md-4">
+         	<a href="jakobpapirov.se/resources#math" target="_blank" title="Specific"><img src="graphics/Tweezers-32.png"></a>
+         </div>
+         <div col-md-4>
+            <a href="https://github.com/JakobPapirov/math" target="_blank">
+            	<img src="graphics/GitHub-32.png" alt="GitHub" title="The repository!"></a>
+         </div>
+       </div>
 		</div> <!-- Resources used ends -->
 	</div> <!-- container ends -->
 </body>
 </html>
-<!--
-							<ul>
-								<li><a href="" target="_blank">placeholder</a></li>
-							</ul>
--->
